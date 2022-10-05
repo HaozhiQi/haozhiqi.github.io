@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Haozhi Qi's Homepage</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Haozhi Qi's Homepage</title>
 
-    <link href="res/css/bootstrap.min.css" rel="stylesheet">
+  <link href="res/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      body{
-      margin: 40px auto;
-      width: auto;
-      max-width: 1050px;
+  <style>
+      .content {
+        margin: 40px auto;
+        width: auto;
+        max-width: 1050px;
+        font-family: Arial;
+      }
 
-      font-family: Arial;
+      .header {
+        width: auto;
+        max-width: auto;
+        font-family: Arial;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: rgba(250, 250, 250)
       }
 
       a:link,a:visited
@@ -26,13 +34,9 @@
         color: #208799;
       }
 
-      blockquote {
-        border-left: 5px solid #3607F2;
-      }
-
       hr {
-        border: 0;
-        height: 2px;
+        border: 10;
+        height: 1px;
         background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
       }
 
@@ -63,260 +67,270 @@
     </style>
     <!-- Bootstrap -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="res/js/bootstrap.min.js"></script>
 </head>
 
-<div class="container">
-
-    <h2> Haozhi Qi </h2>
-
-    Email: hqi AT berkeley.edu<br>
-    <a href="https://scholar.google.com.hk/citations?user=iyVHKkcAAAAJ&hl=en" target="_blank"> Google Scholar </a> & <a
-        href="https://github.com/HaozhiQi" target="_blank"> GitHub Profile </a>
-    <div class="gap-20"></div>
-    I am a Ph.D. Candidate at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~yima/" target="_blank">
-    Prof. Yi Ma </a> and <a href="http://people.eecs.berkeley.edu/~malik" target="_blank">Prof. Jitendra Malik</a>.
-    I obtained my Bachelor's degree from Hong Kong University of Science and Technology (HKUST) advised by <a
-        href="http://www.cs.ust.hk/~cktang/" target="_blank"> Prof. Chi-Keung Tang</a>.
-    I also spent two years in Microsoft Research Asia (MSRA) where I was a research intern advised by <a
-        href="http://www.jifengdai.org/" target="_blank"> Dr. Jifeng Dai </a> and <a href="https://yichenwei.github.io/"
-                                                                                     target="_blank"> Dr. Yichen Wei</a>.
-
-    <!-- publications come here -->
-    <div class="gap-20"></div>
-
-    <h4><b>Papers</b></h4>
-    (* indicates equal technical contribution, all papers have open-source code)
-    <div class="gap-20"></div>
-
-    <!------------------------- CVPR 22 --------------------------------->
+<div class="header">
+  <div class="container">
     <div class="row align-items-center">
-        <div class="col-md-3 align-column-center">
-            <center>
-                <video playsinline autoplay loop muted src="res/figs/cvpr22.mp4" width="92%"
-                       style="border-radius:10px; border:1px solid black"></video>
-            </center>
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> Coupling Vision and Proprioception for Navigation of Legged Robots </b></font><br>
-            <font size="3">
-                <a href="https://markfzp.github.io/" target="_blank"> Zipeng Fu</a>*,
-                <a href="https://ashish-kmr.github.io/" target="_blank"> Ashish Kumar</a>*,
-                <a href="https://anag.me/" target="_blank"> Ananye Agarwal</a>,
-                <b> Haozhi Qi</b>,
-                <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>,
-                <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank"> Deepak Pathak</a>
-            </font>
-            <br>
-            Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 <br>
-            <a href="https://arxiv.org/abs/2112.02094" target="_blank"> [Paper] </a>
-            <a href="https://github.com/MarkFzp/navigation-locomotion" target="_blank"> [Code] </a>
-            <a href="https://navigation-locomotion.github.io/" target="_blank"> [Website] </a>
-            <a href="https://www.youtube.com/watch?v=sZVvutQUAQ4" target="_blank"> [Video] </a><br>
-        </div>
-    </div>
-    <hr>
+      <div class="col-md-4 align-column-center">
+        <center>
+          <img class="img-fluid" src="profile.jpg"
+               style="border-radius:200px; border:1px solid black; margin-bottom: 5px" width="70%" alt=""><br>
+        </center>
+      </div>
+      <div class="col-md-8">
 
-    <!------------------------- JMLR 22 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid " src="res/figs/mcr.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> ReduNet: A White-box Deep Network from the Principle of Maximizing Rate
-                Reduction </b></font><br>
-            <font size="3">
-                <a href="https://ryanchankh.github.io/" target="_blank"> Kwan Ho Ryan Chan</a>*,
-                <a href="https://yaodongyu.github.io/" target="_blank"> Yaodong Yu</a>*,
-                <a href="https://sites.google.com/view/cyou" target="_blank"> Chong You</a>*,
-                <b> Haozhi Qi</b>,
-                <a href="http://www.columbia.edu/~jw2966/" target="_blank"> John Wright</a>,
-                <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-                Journal of Machine Learning Research (<b>JMLR</b>), accepted in 2022 <br>
-                <a href="https://arxiv.org/abs/2105.10446" target="_blank"> [Paper] </a>
-                <a href="https://github.com/Ma-Lab-Berkeley/ReduNet" target="_blank"> [Code] </a>
-            </font>
-        </div>
-    </div>
-    <hr>
+        <h2> Haozhi Qi </h2>
+        Email: hqi AT berkeley.edu<br>
+        <a href="https://scholar.google.com.hk/citations?user=iyVHKkcAAAAJ&hl=en" target="_blank"> Google Scholar </a>
+        & <a
+            href="https://github.com/HaozhiQi" target="_blank"> GitHub Profile </a>
 
-    <!------------------------- ICLR 21 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <div class="row align-items-center">
-                <div class="col-6">
-                    <center><font size="2">Ours</font></center>
-                </div>
-                <div class="col-6">
-                    <center><font size="2">GT</font></center>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="hgap-7perc"></div>
-                <img src="res/figs/rpin1.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
-                <div class="hgap-6perc"></div>
-                <img src="res/figs/rpin2.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
-                <div class="hgap-7perc"></div>
-            </div>
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> Learning Long-term Visual Dynamics with Region Proposal Interaction Networks </b></font><br>
-            <font size="3"> <b> Haozhi Qi</b>,
-                <a href="https://xiaolonw.github.io/" target="_blank"> Xiaolong Wang</a>,
-                <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank"> Deepak Pathak</a>,
-                <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-                <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a><br>
-                International Conference on Learning Representations (<b>ICLR</b>), 2021 <br>
-                <a href="http://arxiv.org/abs/2008.02265" target="_blank"> [Paper] </a>
-                <a href="https://github.com/HaozhiQi/RPIN" target="_blank"> [Code] </a>
-                <a href="https://haozhi.io/RPIN" target="_blank"> [Website] </a>
-            </font>
-        </div>
+        <div class="gap-10"></div>
+        I am a Ph.D. Candidate at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~yima/"
+                                                            target="_blank">
+        Prof. Yi Ma </a> and <a href="http://people.eecs.berkeley.edu/~malik" target="_blank">Prof. Jitendra Malik</a>.
+        I obtained my Bachelor's degree from Hong Kong University of Science and Technology (HKUST) advised by <a
+            href="http://www.cs.ust.hk/~cktang/" target="_blank"> Prof. Chi-Keung Tang</a>.
+        I also spent two years in Microsoft Research Asia (MSRA) where I was a research intern advised by <a
+            href="http://www.jifengdai.org/" target="_blank"> Dr. Jifeng Dai </a> and <a
+            href="https://yichenwei.github.io/"
+            target="_blank"> Dr. Yichen Wei</a>.
+      </div>
     </div>
-    <hr>
+  </div>
+</div>
 
-    <!------------------------- ICML 20 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid " src="res/figs/icml20.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> Deep Isometric Learning for Visual Recognition </b></font><br>
-            <font size="3"> <b> Haozhi Qi</b>,
-                <a href="https://sites.google.com/view/cyou" target="_blank"> Chong You</a>,
-                <a href="https://xiaolonw.github.io/" target="_blank"> Xiaolong Wang</a>,
-                <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-                <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a><br>
-                International Conference on Machine Learning (<b>ICML</b>), 2020 <br>
-                <a href="https://arxiv.org/abs/2006.16992" target="_blank"> [Paper] </a>
-                <a href="https://github.com/HaozhiQi/ISONet" target="_blank"> [Code] </a>
-                <a href="https://haozhi.io/ISONet" target="_blank"> [Website] </a>
-                <a href="https://youtu.be/EmrVtAx8cNc" target="_blank"> [Video] </a><br>
-            </font>
-        </div>
-    </div>
-    <hr>
-    <!------------------------- NIPS 19 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid" src="res/figs/nips19.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> NeurVPS: Neural Vanishing Point Scanning via Conic Convolution </b></font><br>
-            <font size="3">
-                <a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
-                <b> Haozhi Qi</b>,
-                <a href="https://cs.stanford.edu/people/jingweih/" target="_blank"> Jingwei Huang</a>,
-                <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-                Neural Information Processing System (<b>NIPS</b>), 2019 <br>
-                <a href="https://arxiv.org/abs/1910.06316" target="_blank"> [Paper] </a> <a
-                    href="https://github.com/zhou13/neurvps" target="_blank"> [Code] </a><br>
-            </font>
-        </div>
-    </div>
-    <hr>
-    <!------------------------- ICCV 19 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid" src="res/figs/iccv19a.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> Learning to Reconstruct 3D Manhattan Wireframes from a Single Image </b></font><br>
-            <font size="3">
-                <a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
-                <b> Haozhi Qi</b>,
-                <a href="https://yx-s-z.github.io/" target="_blank"> Yuexiang Zhai</a>,
-                <a href="https://qisun.me/" target="_blank"> Qi Sun</a>,
-                <a href="http://www.zhilichen.com/" target="_blank"> Zhili Chen</a>,
-                <a href="https://www.liyiwei.org/" target="_blank"> Li-Yi Wei</a>,
-                <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-                International Conference on Computer Vision (<b>ICCV</b>), 2019 (<b>Oral, 4.3% acceptance rate</b>) <br>
-                <a href="https://arxiv.org/abs/1905.07482" target="_blank"> [Paper] </a> <a
-                    href="https://github.com/zhou13/shapeunity" target="_blank"> [Code] </a><br>
-            </font>
-        </div>
-    </div>
-    <hr>
-    <!------------------------- ICCV 19 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid" src="res/figs/iccv19b.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b> End-to-End Wireframe Parsing </b></font> <br>
-            <font size="3">
-                <a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
-                <b> Haozhi Qi</b>,
-                <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-                International Conference on Computer Vision (<b>ICCV</b>), 2019 <br>
-                <a href="https://arxiv.org/abs/1905.03246" target="_blank"> [Paper] </a> <a
-                    href="https://github.com/zhou13/lcnn" target="_blank"> [Code] </a><br>
-            </font>
-        </div>
-    </div>
-    <hr>
-    <!------------------------- ICCV 17 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid" src="res/figs/iccv17.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"> <b>Deformable Convolutional Networks </b></font><br>
-            <font size="3">
-                <a href="https://jifengdai.org/" target="_blank"> Jifeng Dai</a>*,
-                <b>Haozhi Qi</b>*,
-                <a href="http://yuwenxiong.com/" target="_blank"> Yuwen Xiong</a>*,
-                <a href="https://liyi14.github.io/" target="_blank"> Yi Li</a>*,
-                <a href="http://www.cs.toronto.edu/~gdzhang/" target="_blank"> Guodong Zhang</a>*,
-                <a href="https://ancientmooner.github.io/" target="_blank"> Han Hu</a>,
-                <a href="https://yichenwei.github.io/" target="_blank"> Yichen Wei</a><br>
-                International Conference on Computer Vision (<b>ICCV</b>), 2017 (<b>Oral, 2.1% acceptance rate</b>) <br>
-                <a href="https://arxiv.org/abs/1703.06211" target="_blank"> [Paper] </a>
-                <a href="https://github.com/msracver/Deformable-ConvNets" target="_blank"> [Code] </a> <br>
-            </font>
-        </div>
-    </div>
-    <hr>
-    <!------------------------- CVPR 17 --------------------------------->
-    <div class="row align-items-center">
-        <div class="col-md-3">
-            <img class="img-fluid" src="res/figs/cvpr17.png" style="border:0px solid black" alt="">
-        </div>
-        <div class="col-md-9">
-            <font size="4"><b>Fully Convolutional Instance-aware Semantic Segmentation</b></font> <br>
-            <font size="3">
-                <a href="https://liyi14.github.io/" target="_blank"> Yi Li</a>*,
-                <b>Haozhi Qi</b>*,
-                <a href="https://jifengdai.org/" target="_blank"> Jifeng Dai</a>,
-                <a href="https://www.researchgate.net/scientific-contributions/Xiangyang-Ji-11421572" target="_blank">
-                    Xiangyang Ji</a>,
-                <a href="https://yichenwei.github.io/" target="_blank"> Yichen Wei</a><br>
-                Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017 (<b>Spotlight, 8.0% acceptance rate</b>)
-                <br>
-                <a href="https://arxiv.org/abs/1611.07709" target="_blank"> [Paper] </a>
-                <a href="https://github.com/msracver/FCIS" target="_blank"> [Code] </a>
-            </font>
-        </div>
-    </div>
+<div class="content">
+  <!-- publications come here -->
+  <h3> Papers </h3>
+  <font size="3">(*indicates equal technical contribution, all papers have open-source code)</font>
+  <div class="gap-10"></div>
 
-    <div class="gap-20"></div>
-    <div class="gap-20"></div>
+  <!------------------------- CVPR 22 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted src="res/figs/cvpr22.mp4" width="98%"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> Coupling Vision and Proprioception for Navigation of Legged Robots </b></font><br>
+      <font size="3">
+        <a href="https://markfzp.github.io/" target="_blank"> Zipeng Fu</a>*,
+        <a href="https://ashish-kmr.github.io/" target="_blank"> Ashish Kumar</a>*,
+        <a href="https://anag.me/" target="_blank"> Ananye Agarwal</a>,
+        <b> Haozhi Qi</b>,
+        <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>,
+        <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank"> Deepak Pathak</a>
+      </font>
+      <br>
+      <!-- 2067 / 8161 (25.3%) acceptance rate -->
+      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 <br>
+      <a href="https://arxiv.org/abs/2112.02094" target="_blank"> [Paper] </a>
+      <a href="https://github.com/MarkFzp/navigation-locomotion" target="_blank"> [Code] </a>
+      <a href="https://navigation-locomotion.github.io/" target="_blank"> [Website] </a>
+      <a href="https://www.youtube.com/watch?v=sZVvutQUAQ4" target="_blank"> [Video] </a><br>
+    </div>
+  </div>
+  <hr>
 
-    Feel free to use the <a href="https://github.com/HaozhiQi/haozhiqi.github.io/" target="_blank"> code</a>.
-    And if you want your website to be linked from here, feel free to make a pull request or email me.
-    <br/>
-    <a href="https://yx-s-z.github.io/" target="_blank">&#9671</a>
-    <a href="https://robinwu218.github.io/" target="_blank">&#9671</a>
+  <!------------------------- JMLR 22 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid " src="res/figs/mcr.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> ReduNet: A White-box Deep Network from the Principle of Maximizing Rate
+        Reduction </b></font><br>
+      <font size="3">
+        <a href="https://ryanchankh.github.io/" target="_blank"> Kwan Ho Ryan Chan</a>*,
+        <a href="https://yaodongyu.github.io/" target="_blank"> Yaodong Yu</a>*,
+        <a href="https://sites.google.com/view/cyou" target="_blank"> Chong You</a>*,
+        <b> Haozhi Qi</b>,
+        <a href="http://www.columbia.edu/~jw2966/" target="_blank"> John Wright</a>,
+        <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
+        Journal of Machine Learning Research (<b>JMLR</b>), accepted in 2022 <br>
+        <a href="https://arxiv.org/abs/2105.10446" target="_blank"> [Paper] </a>
+        <a href="https://github.com/Ma-Lab-Berkeley/ReduNet" target="_blank"> [Code] </a>
+      </font>
+    </div>
+  </div>
+  <hr>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="res/js/bootstrap.min.js"></script>
+  <!------------------------- ICLR 21 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <center><font size="2">Ours</font></center>
+        </div>
+        <div class="col-6">
+          <center><font size="2">GT</font></center>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="hgap-7perc"></div>
+        <img src="res/figs/rpin1.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
+        <div class="hgap-6perc"></div>
+        <img src="res/figs/rpin2.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
+        <div class="hgap-7perc"></div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> Learning Long-term Visual Dynamics with Region Proposal Interaction Networks </b></font><br>
+      <font size="3"> <b> Haozhi Qi</b>,
+        <a href="https://xiaolonw.github.io/" target="_blank"> Xiaolong Wang</a>,
+        <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank"> Deepak Pathak</a>,
+        <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
+        <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a><br>
+        International Conference on Learning Representations (<b>ICLR</b>), 2021 <br>
+        <a href="http://arxiv.org/abs/2008.02265" target="_blank"> [Paper] </a>
+        <a href="https://github.com/HaozhiQi/RPIN" target="_blank"> [Code] </a>
+        <a href="https://haozhi.io/RPIN" target="_blank"> [Website] </a>
+      </font>
+    </div>
+  </div>
+  <hr>
+
+  <!------------------------- ICML 20 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid " src="res/figs/icml20.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> Deep Isometric Learning for Visual Recognition </b></font><br>
+      <font size="3"> <b> Haozhi Qi</b>,
+        <a href="https://sites.google.com/view/cyou" target="_blank"> Chong You</a>,
+        <a href="https://xiaolonw.github.io/" target="_blank"> Xiaolong Wang</a>,
+        <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
+        <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a><br>
+        International Conference on Machine Learning (<b>ICML</b>), 2020 <br>
+        <a href="https://arxiv.org/abs/2006.16992" target="_blank"> [Paper] </a>
+        <a href="https://github.com/HaozhiQi/ISONet" target="_blank"> [Code] </a>
+        <a href="https://haozhi.io/ISONet" target="_blank"> [Website] </a>
+        <a href="https://youtu.be/EmrVtAx8cNc" target="_blank"> [Video] </a><br>
+      </font>
+    </div>
+  </div>
+  <hr>
+  <!------------------------- NIPS 19 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/nips19.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> NeurVPS: Neural Vanishing Point Scanning via Conic Convolution </b></font><br>
+      <font size="3">
+        <a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
+        <b> Haozhi Qi</b>,
+        <a href="https://cs.stanford.edu/people/jingweih/" target="_blank"> Jingwei Huang</a>,
+        <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
+        Neural Information Processing System (<b>NIPS</b>), 2019 <br>
+        <a href="https://arxiv.org/abs/1910.06316" target="_blank"> [Paper] </a> <a
+            href="https://github.com/zhou13/neurvps" target="_blank"> [Code] </a><br>
+      </font>
+    </div>
+  </div>
+  <hr>
+  <!------------------------- ICCV 19 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/iccv19a.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> Learning to Reconstruct 3D Manhattan Wireframes from a Single Image </b></font><br>
+      <font size="3">
+        <a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
+        <b> Haozhi Qi</b>,
+        <a href="https://yx-s-z.github.io/" target="_blank"> Yuexiang Zhai</a>,
+        <a href="https://qisun.me/" target="_blank"> Qi Sun</a>,
+        <a href="http://www.zhilichen.com/" target="_blank"> Zhili Chen</a>,
+        <a href="https://www.liyiwei.org/" target="_blank"> Li-Yi Wei</a>,
+        <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
+        International Conference on Computer Vision (<b>ICCV</b>), 2019 (<b>Oral, 4.3% acceptance rate</b>) <br>
+        <a href="https://arxiv.org/abs/1905.07482" target="_blank"> [Paper] </a> <a
+            href="https://github.com/zhou13/shapeunity" target="_blank"> [Code] </a><br>
+      </font>
+    </div>
+  </div>
+  <hr>
+  <!------------------------- ICCV 19 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/iccv19b.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b> End-to-End Wireframe Parsing </b></font> <br>
+      <font size="3">
+        <a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
+        <b> Haozhi Qi</b>,
+        <a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
+        International Conference on Computer Vision (<b>ICCV</b>), 2019 <br>
+        <a href="https://arxiv.org/abs/1905.03246" target="_blank"> [Paper] </a> <a
+            href="https://github.com/zhou13/lcnn" target="_blank"> [Code] </a><br>
+      </font>
+    </div>
+  </div>
+  <hr>
+  <!------------------------- ICCV 17 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/iccv17.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"> <b>Deformable Convolutional Networks </b></font><br>
+      <font size="3">
+        <a href="https://jifengdai.org/" target="_blank"> Jifeng Dai</a>*,
+        <b>Haozhi Qi</b>*,
+        <a href="http://yuwenxiong.com/" target="_blank"> Yuwen Xiong</a>*,
+        <a href="https://liyi14.github.io/" target="_blank"> Yi Li</a>*,
+        <a href="http://www.cs.toronto.edu/~gdzhang/" target="_blank"> Guodong Zhang</a>*,
+        <a href="https://ancientmooner.github.io/" target="_blank"> Han Hu</a>,
+        <a href="https://yichenwei.github.io/" target="_blank"> Yichen Wei</a><br>
+        International Conference on Computer Vision (<b>ICCV</b>), 2017 (<b>Oral, 2.1% acceptance rate</b>) <br>
+        <a href="https://arxiv.org/abs/1703.06211" target="_blank"> [Paper] </a>
+        <a href="https://github.com/msracver/Deformable-ConvNets" target="_blank"> [Code] </a> <br>
+      </font>
+    </div>
+  </div>
+  <hr>
+  <!------------------------- CVPR 17 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/cvpr17.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b>Fully Convolutional Instance-aware Semantic Segmentation</b></font> <br>
+      <font size="3">
+        <a href="https://liyi14.github.io/" target="_blank"> Yi Li</a>*,
+        <b>Haozhi Qi</b>*,
+        <a href="https://jifengdai.org/" target="_blank"> Jifeng Dai</a>,
+        <a href="https://www.researchgate.net/scientific-contributions/Xiangyang-Ji-11421572" target="_blank">
+          Xiangyang Ji</a>,
+        <a href="https://yichenwei.github.io/" target="_blank"> Yichen Wei</a><br>
+        Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017 (<b>Spotlight, 8.0% acceptance rate</b>)
+        <br>
+        <a href="https://arxiv.org/abs/1611.07709" target="_blank"> [Paper] </a>
+        <a href="https://github.com/msracver/FCIS" target="_blank"> [Code] </a>
+      </font>
+    </div>
+  </div>
 
 </div>
+
+
 </html>
