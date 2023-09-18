@@ -31,16 +31,17 @@
         background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
       }
 
-      .gap-30 {height:30px;}
       .gap-20 {height:20px;}
       .gap-10 {height:10px;}
-      .gap-5 {height:5px;}
       .hgap-6perc {width: 6%;}
       .hgap-7perc {width: 7%;}
 
       ::selection {
         background: rgba(220, 220, 220);
 			}
+
+      .section-div {height: 3em}
+      .content-div {height: 2em}
 
 	</style>
 	<!-- Bootstrap -->
@@ -61,7 +62,7 @@
 
 <div class="header">
 	<div class="container">
-		<div class="gap-10"></div>
+		<div class="content-div"></div>
 		<div class="row align-items-center">
 			<div class="col-md-3 align-column-center">
 				<center>
@@ -100,15 +101,41 @@
 	<li>
 		Co-organize <a href="http://www.touchprocessing.org/2023/" target="_blank">Workshop on Touch Processing: a new Sensing Modality for AI</a> at NeurIPS 2023.
 	</li>
-	<hr>
+	<div class="content-div"></div>
 </div>
 
 
 <div class="container">
 	<!-- publications come here -->
-	<h3> Papers </h3>
-	<font size="3">(*indicates equal technical contribution)</font>
+	<h3> Papers <font size="3" style="font-weight:normal">(*indicates equal technical contribution)</font></h3>
 	<div class="gap-20"></div>
+
+	<!------------------------- CoRL 23 --------------------------------->
+	<div class="row align-items-center">
+		<div class="col-md-3 align-column-center">
+			<center>
+				<video playsinline autoplay loop muted src="res/figs/corl23.mp4" width="98%"
+				       style="border-radius:10px;"></video>
+			</center>
+		</div>
+		<div class="col-md-9">
+			<font size="4"> <b> General In-Hand Object Rotation with Vision and Touch </b></font><br>
+			<font size="3">
+				<b> Haozhi Qi</b>,
+				<a href="https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en" target="_blank"> Brent Yi</a>,
+				<a href="http://www.cs.cmu.edu/~sudhars1/" target="_blank"> Sudharshan Suresh</a>,
+				<a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en" target="_blank"> Mike Lambeta</a>,
+				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
+				<a href="https://www.robertocalandra.com/about/" target="_blank"> Roberto Calandra</a>,
+				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
+			</font>
+			<br>
+			<!-- 199 / 498 (39.9%) acceptance rate -->
+			Conference on Robot Learning (<b>CoRL</b>), 2023<br>
+			<a href="https://haozhi.io/rotateit" target="_blank"> [Website] </a>
+		</div>
+	</div>
+	<div class="content-div"></div>
 
 	<!------------------------- CoRL 22 --------------------------------->
 	<div class="row align-items-center">
@@ -137,7 +164,7 @@
 			<a href="https://twitter.com/HaozhiQ/status/1580217728693960704" target="_blank"> [Twitter] </a>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 
 	<!------------------------- CVPR 22 --------------------------------->
 	<div class="row align-items-center">
@@ -167,7 +194,7 @@
 			<a href="https://twitter.com/pathak2206/status/1540357312703090695" target="_blank"> [Twitter] </a>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 
 	<!------------------------- JMLR 22 --------------------------------->
 	<div class="row align-items-center">
@@ -191,7 +218,7 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 
 	<!------------------------- ICLR 21 --------------------------------->
 	<div class="row align-items-center">
@@ -227,7 +254,7 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 
 	<!------------------------- ICML 20 --------------------------------->
 	<div class="row align-items-center">
@@ -250,7 +277,7 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 	<!------------------------- NIPS 19 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
@@ -269,7 +296,7 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 	<!------------------------- ICCV 19 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
@@ -291,7 +318,7 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 	<!------------------------- ICCV 19 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
@@ -309,7 +336,8 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
+
 	<!------------------------- ICCV 17 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
@@ -331,7 +359,7 @@
 			</font>
 		</div>
 	</div>
-	<hr>
+	<div class="content-div"></div>
 	<!------------------------- CVPR 17 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
@@ -356,7 +384,6 @@
 
 </div>
 
-<div class="gap-30"></div>
-<div class="gap-30"></div>
+<div class="section-div"></div>
 
 </html>
