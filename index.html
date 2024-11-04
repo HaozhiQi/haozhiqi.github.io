@@ -47,6 +47,25 @@
 	</style>
 	<!-- Bootstrap -->
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const videos = document.querySelectorAll("video[data-src]");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    video.src = video.getAttribute("data-src");
+                    video.autoplay = true;
+                    video.loop = true;
+                    observer.unobserve(video);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        videos.forEach(video => observer.observe(video));
+    });
+	</script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -131,7 +150,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/penspin.mp4" width="100%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/penspin.mp4" width="100%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -160,7 +179,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/twist24.mp4" width="98%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/twist24.mp4" width="98%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -183,11 +202,53 @@
 	</div>
 	<div class="content-div"></div>
 
+	<!------------------------- Digit --------------------------------->
+	<div class="row align-items-center">
+		<div class="col-md-3 align-column-center">
+			<img class="img-fluid" src="res/figs/digit360.gif" style="border:0px solid black" alt="">
+		</div>
+		<div class="col-md-9">
+			<font size="4"> <b> Digitizing Touch with an Artificial Multimodal Fingertip  </b></font><br>
+			<font size="3">
+				<a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en" target="_blank"> Mike Lambeta</a>,
+				<a href="https://scholar.google.com/citations?user=9bt2Z5QAAAAJ&hl=en" target="_blank">Tingfan Wu</a>,
+				Ali Sengül,
+				Victoria Rose Most,
+				Nolan Black,
+				Kevin Sawyer,
+				Romeo Mercado,
+				<b> Haozhi&nbsp;Qi</b>,
+				Alexander Sohn,
+				Byron Taylor,
+				Norb Tydingco,
+				Gregg Kammerer,
+				Dave Stroud,
+				Jake Khatha,
+				Kurt Jenkins,
+				Kyle Most,
+				Neal Stein,
+				Ricardo Chavira,
+				Thomas Craven-Bartle,
+				Eric Sanchez,
+				Yitian Ding,
+				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>,
+				<a href="https://www.robertocalandra.com/about/" target="_blank"> Roberto Calandra</a>
+			</font>
+			<br>
+			Tech Report, Nov 2024<br>
+			<a href="https://ai.meta.com/research/publications/digitizing-touch-with-an-artificial-multimodal-fingertip/" target="_blank"> [Paper] </a>
+			<a href="https://github.com/facebookresearch/digit360/" target="_blank"> [Code] </a>
+			<a href="https://digit.ml/" target="_blank"> [Website] </a>
+			
+		</div>
+	</div>
+	<div class="content-div"></div>
+
 	<!------------------------- Arxiv 24 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/hop.mp4" width="100%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/hop.mp4" width="100%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -216,7 +277,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/iht.mp4" width="100%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/iht.mp4" width="100%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -243,7 +304,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/hato.mp4" width="98%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/hato.mp4" width="98%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -303,7 +364,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/neural_feel.mp4" width="98%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/neural_feel.mp4" width="98%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -336,7 +397,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/NCF.mp4" width="100%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/NCF.mp4" width="100%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -364,7 +425,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/corl22.mp4" width="98%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/corl22.mp4" width="98%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -394,7 +455,7 @@
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted src="res/figs/cvpr22.mp4" width="98%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/cvpr22.mp4" width="98%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
@@ -423,7 +484,7 @@
 	<!------------------------- JMLR 22 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
-			<img class="img-fluid " src="res/figs/mcr.png" style="border:0px solid black" alt="">
+			<img class="img-fluid" src="res/figs/mcr.png" style="border:0px solid black" alt="">
 		</div>
 		<div class="col-md-9">
 			<font size="4"> <b> ReduNet: A White-box Deep Network from the Principle of Maximizing Rate
