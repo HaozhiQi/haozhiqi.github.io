@@ -7,6 +7,7 @@
 	<title>Haozhi Qi's Homepage</title>
 
 	<link href="res/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 	<style>
       .header {
@@ -25,14 +26,6 @@
         color: #208799;
       }
 
-      hr {
-        border: 10;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
-      }
-
-      .gap-20 {height:20px;}
-      .gap-10 {height:10px;}
       .hgap-6perc {width: 6%;}
       .hgap-7perc {width: 7%;}
 
@@ -43,6 +36,54 @@
       .section-div {height: 3em}
       .content-div {height: 2em}
       .small-div {height: 0.5em}
+
+    .link-badges {
+      margin-top: 4px;
+      margin-bottom: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .link-badges .badge {
+      display: inline-flex;
+      align-items: center;
+
+      padding: 3px 5px;
+      font-size: 14px;
+      font-weight: 500;
+
+      color: #111827;
+      text-decoration: none;
+      background: #ffffff;
+
+      border: 1px solid #d1d5db;
+      border-radius: 4px;     /* pill 形状，视觉上不会显得笨重 */
+      line-height: 1.2;
+
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .link-badges .badge i {
+      margin-right: 4px;
+      font-size: 14px;
+    }
+
+    .link-badges .badge:hover {
+      background: #f3f4f6;
+      border-color: #cbd5f5;
+    }
+
+    .authors {
+      font-size: 16px;
+      color: #333333;
+    }
+    .authors a:link,
+    .authors a:visited {
+      color: #666666 !important;
+      text-decoration: none;
+    }
+
 
 	</style>
 	<!-- Bootstrap -->
@@ -78,6 +119,79 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="res/js/bootstrap.min.js"></script>
+
+	<script>
+    const jitendra_malik     = '<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>';
+    const yi_ma              = '<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank">Yi Ma</a>';
+
+    const irmak_guzey        = '<a href="https://irmakguzey.github.io/" target="_blank">Irmak Guzey</a>';
+    const julen_urain        = '<a href="https://robotgradient.com/" target="_blank">Julen Urain</a>';
+    const krishna_bodduluri  = '<a href="https://scholar.google.com/citations?user=0tXwJl8AAAAJ&hl=en" target="_blank">Krishna Bodduluri</a>';
+    const lerrel_pinto       = '<a href="https://www.lerrelpinto.com/" target="_blank">Lerrel Pinto</a>';
+    const akshara_rai        = '<a href="https://akshararai.github.io/" target="_blank">Akshara Rai</a>';
+    const chaoyi_pan         = '<a href="https://panchaoyi.com/" target="_blank">Chaoyi Pan</a>';
+    const changhao_wang      = '<a href="https://changhaowang.github.io/" target="_blank">Changhao Wang</a>';
+    const zixi_liu           = '<a href="https://scholar.google.com/citations?user=4eeVPBoAAAAJ&hl=en" target="_blank">Zixi Liu</a>';
+    const homanga_bharadhwaj = '<a href="https://homangab.github.io/" target="_blank">Homanga Bharadhwaj</a>';
+    const akash_sharma       = '<a href="https://akashsharma02.github.io/" target="_blank">Akash Sharma</a>';
+    const guanya_shi         = '<a href="https://www.gshi.me/" target="_blank">Guanya Shi</a>';
+    const francois_hogan     = '<a href="https://scholar.google.com/citations?user=-fkT5rYAAAAJ&hl=en" target="_blank">Francois Hogan</a>';
+    const yu_zhang           = '<a href="https://franklin-zhang0.github.io/" target="_blank">Yu Zhang</a>';
+    const qiyang_li          = '<a href="https://colinqiyangli.github.io/" target="_blank">Qiyang Li</a>';
+    const sergey_levine      = '<a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a>';
+    const jessica_yin        = '<a href="https://jessicayin.com/" target="_blank">Jessica Yin</a>';
+    const james_pikul        = '<a href="https://pikulgroup.engr.wisc.edu/" target="_blank">James Pikul</a>';
+    const mark_yim           = '<a href="https://www.modlabupenn.org/" target="_blank">Mark Yim</a>';
+    const tess_hellebrekers  = '<a href="https://tesshellebrekers.com/" target="_blank">Tess Hellebrekers</a>';
+    const himanshu_singh     = '<a href="https://hgaurav2k.github.io/" target="_blank">Himanshu Gaurav Singh</a>';
+    const antonio_loquercio  = '<a href="https://antonilo.github.io/" target="_blank">Antonio Loquercio</a>';
+    const carlo_sferrazza    = '<a href="https://sferrazza.cc/" target="_blank">Carlo Sferrazza</a>';
+    const jane_wu            = '<a href="https://janehwu.github.io/" target="_blank">Jane Wu</a>';
+    const jun_wang           = '<a href="https://wang59695487.github.io/" target="_blank">Jun Wang</a>';
+    const ying_yuan          = '<a href="https://yingyuan0414.github.io/" target="_blank">Ying Yuan</a>';
+    const haichuan_che       = '<a href="https://www.linkedin.com/in/haichuan-che-7338721b1/" target="_blank">Haichuan Che</a>';
+    const toru_lin           = '<a href="https://toruowo.github.io/" target="_blank">Toru Lin</a>';
+    const zhao_heng_yin      = '<a href="https://zhaohengyin.github.io/" target="_blank">Zhao-Heng Yin</a>';
+    const pieter_abbeel      = '<a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>';
+    const tingfan_wu         = '<a href="https://scholar.google.com/citations?user=9bt2Z5QAAAAJ&hl=en" target="_blank">Tingfan Wu</a>';
+    const taosha_fan         = '<a href="https://scholar.google.com/citations?user=3PJeg1wAAAAJ&hl=en" target="_blank">Taosha Fan</a>';
+    const mrinal_kalakrishnan= '<a href="https://scholar.google.com/citations?user=DMTuJzAAAAAJ&hl=en" target="_blank">Mrinal Kalakrishnan</a>';
+    const michael_kaess      = '<a href="https://www.cs.cmu.edu/~kaess/" target="_blank">Michael Kaess</a>';
+    const brent_yi           = '<a href="https://brentyi.github.io/" target="_blank">Brent Yi</a>';
+    const sudharshan_suresh  = '<a href="http://www.cs.cmu.edu/~sudhars1/" target="_blank">Sudharshan Suresh</a>';
+    const mike_lambeta       = '<a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en" target="_blank">Mike Lambeta</a>';
+    const roberto_calandra   = '<a href="https://www.robertocalandra.com/about/" target="_blank">Roberto Calandra</a>';
+    const carolina_higuera   = '<a href="https://carolinahiguera.github.io/" target="_blank">Carolina Higuera</a>';
+    const joseph_ortiz       = '<a href="https://joeaortiz.github.io/" target="_blank">Joseph Ortiz</a>';
+    const luis_pineda        = '<a href="https://scholar.google.com/citations?user=rebEn8oAAAAJ&hl=en" target="_blank">Luis Pineda</a>';
+    const byron_boots        = '<a href="https://homes.cs.washington.edu/~bboots/" target="_blank">Byron Boots</a>';
+    const mustafa_mukadam    = '<a href="https://www.mustafamukadam.com/" target="_blank">Mustafa Mukadam</a>';
+    const ashish_kumar       = '<a href="https://ashish-kmr.github.io/" target="_blank">Ashish Kumar</a>';
+    const zipeng_fu          = '<a href="https://markfzp.github.io/" target="_blank">Zipeng Fu</a>';
+    const ananye_agarwal     = '<a href="https://anag.me/" target="_blank">Ananye Agarwal</a>';
+    const ryan_chan          = '<a href="https://ryanchankh.github.io/" target="_blank">Kwan Ho Ryan Chan</a>';
+    const yaodong_yu         = '<a href="https://yaodongyu.github.io/" target="_blank">Yaodong Yu</a>';
+    const chong_you          = '<a href="https://sites.google.com/view/cyou" target="_blank">Chong You</a>';
+    const john_wright        = '<a href="http://www.columbia.edu/~jw2966/" target="_blank">John Wright</a>';
+    const xiaolong_wang      = '<a href="https://xiaolonw.github.io/" target="_blank">Xiaolong Wang</a>';
+    const deepak_pathak      = '<a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a>';
+    const yichao_zhou        = '<a href="https://yichaozhou.com" target="_blank">Yichao Zhou</a>';
+    const jingwei_huang      = '<a href="https://cs.stanford.edu/people/jingweih/" target="_blank">Jingwei Huang</a>';
+    const yuexiang_zhai      = '<a href="https://yx-s-z.github.io/" target="_blank">Yuexiang Zhai</a>';
+    const qi_sun             = '<a href="https://qisun.me/" target="_blank">Qi Sun</a>';
+    const zhili_chen         = '<a href="http://www.zhilichen.com/" target="_blank">Zhili Chen</a>';
+    const liyi_wei           = '<a href="https://www.liyiwei.org/" target="_blank">Li-Yi Wei</a>';
+    const han_hu             = '<a href="https://ancientmooner.github.io/" target="_blank"> Han Hu</a>';
+    const guodong_zhang      = '<a href="http://www.cs.toronto.edu/~gdzhang/" target="_blank"> Guodong Zhang</a>';
+    const yuwen_xiong        = '<a href="https://yuwenxiong.com/" target="_blank">Yuwen Xiong</a>';
+    const yichen_wei         = '<a href="https://yichenwei.github.io/" target="_blank">Yichen Wei</a>';
+    const xiangyang_ji       = '<a href="https://www.researchgate.net/scientific-contributions/Xiangyang-Ji-11421572" target="_blank">Xiangyang Ji</a>';
+    const jifeng_dai         = '<a href="https://jifengdai.org/" target="_blank">Jifeng Dai</a>';
+    const yi_li              = '<a href="https://liyi14.github.io/" target="_blank">Yi Li</a>';
+  </script>
+
+
+
 </head>
 
 <div class="header">
@@ -200,516 +314,674 @@
 
 <div class="container">
 	<!-- publications come here -->
-	<h3> Papers <font size="3" style="font-weight:normal">(*indicates equal technical contribution)</font></h3>
+	<h3> Papers <font size="3" style="font-weight:normal">(*Equal Technical Contribution, †Equal Advising)</font></h3>
 
 	<!---- Last Count is Jul 10 ---->
-	<div style="color:white"> <font size="3"> Code Release Progress: 18 / 20 (90.0%). </font></div>
+	<div style="color:white"> <font size="3"> Code Release Progress: 20 / 22 (90.9%). </font></div>
 	<div class="small-div"></div>
 
-	<!------------------------- arXiv 25 --------------------------------->
+
+  	<div class="row align-items-center">
+      <div class="col-md-3 align-column-center">
+        <center>
+          <video playsinline autoplay loop muted data-src="res/figs/aina.mp4" width="100%" preload="metadata"
+                 style="border-radius:10px;"></video>
+        </center>
+      </div>
+      <div class="col-md-9">
+        <font size="4"> <b> Dexterity from Smart Lenses: Multi-Fingered Robot Manipulation with In-the-Wild Human Demonstrations </b></font><br>
+        <div class="authors">
+          <script>document.write(irmak_guzey);</script>,
+          <b> Haozhi Qi</b>,
+          <script>document.write(julen_urain);</script>,
+          <script>document.write(changhao_wang);</script>,
+          <script>document.write(jessica_yin);</script>,
+          <script>document.write(krishna_bodduluri);</script>,
+          <script>document.write(mike_lambeta);</script>,
+          <script>document.write(lerrel_pinto);</script>,
+          <script>document.write(akshara_rai);</script>,
+          <script>document.write(jitendra_malik);</script>,
+          <script>document.write(tingfan_wu);</script>,
+          <script>document.write(akash_sharma);</script>,
+          <script>document.write(homanga_bharadhwaj);</script>
+        </div>
+        Tech Report, Nov 2025
+        <div class="link-badges">
+          <a href="https://arxiv.org/pdf/2511.16661" class="badge" target="_blank"><i class="fas fa-book"></i>Paper</a>
+          <a href="https://github.com/irmakguzey/AINA/" class="badge" target="_blank"><i class="fa-brands fa-github"></i>Code</a>
+          <a href="https://aina-robot.github.io/" class="badge" target="_blank"><i class="fas fa-globe"></i>Website</a>
+          <a href="https://x.com/irmakkguzey/status/1991898960341193064" class="badge" target="_blank"><i class="fas fa-comment-dots"></i>Summary</a>
+        </div>
+      </div>
+    </div>
+	<div class="content-div"></div>
+
+
 	<div class="row align-items-center">
 		<div class="col-md-3 align-column-center">
 			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/dexhier.mp4" width="100%" preload="metadata"
+				<video playsinline autoplay loop muted data-src="res/figs/spider.mp4" width="100%" preload="metadata"
 				       style="border-radius:10px;"></video>
 			</center>
 		</div>
 		<div class="col-md-9">
-			<font size="4"> <b> From Simple to Complex Skills: The Case of In-Hand Object Reorientation </b></font><br>
-			<font size="3">
-				<b> Haozhi Qi</b>,
-				<a href="https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en" target="_blank"> Brent Yi</a>,
-				<a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en" target="_blank"> Mike Lambeta</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-				<a href="https://www.robertocalandra.com/about/" target="_blank"> Roberto Calandra</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
-			</font>
-			<br>
-			International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
-			<a href="http://arxiv.org/abs/2501.05439" target="_blank"> [Paper] </a>
-			<a href="https://dexhier.github.io/" target="_blank"> [Website] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- ICRA 25 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/hato.mp4" width="98%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Learning Visuotactile Skills with Two Multifingered Hands </b></font><br>
-			<font size="3">
-				<a href="https://toruowo.github.io/" target="_blank"> Toru Lin</a>,
-				<a href="" target="_blank"> Yu Zhang</a>*,
-				<a href="https://colinqiyangli.github.io/" target="_blank"> Qiyang Li</a>*,
-				<b> Haozhi Qi</b>*,
-				<a href="https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en" target="_blank"> Brent Yi</a>,
-				<a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank"> Sergey Levine</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
-			</font>
-			<br>
-			International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
-			<a href="https://arxiv.org/abs/2404.16823" target="_blank"> [Paper] </a>
-			<a href="https://github.com/ToruOwO/hato" target="_blank"> [Code] </a>
-			<a href="https://toruowo.github.io/hato/" target="_blank"> [Website] </a>
-			<a href="https://twitter.com/ToruO_O/status/1783892120631484919" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- ICRA 25 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/iht.mp4" width="100%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing </b></font><br>
-			<font size="3">
-				<a href="https://jessicayin.com/" target="_blank"> Jessica Yin</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>,
-				<a href="https://pikulgroup.engr.wisc.edu/" target="_blank"> James Pikul</a>,
-				<a href="https://www.modlabupenn.org/" target="_blank"> Mark Yim</a>,
-				<a href="https://tesshellebrekers.com/" target="_blank"> Tess Hellebrekers</a>
-			</font>
-			<br>
-			International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
-			<a href="https://arxiv.org/abs/2407.07885" target="_blank"> [Paper] </a>
-			<a href="https://github.com/jessicayin/tactile_skin_model" target="_blank"> [Code] </a>
-			<a href="https://jessicayin.github.io/tactile-skin-rl/" target="_blank"> [Website] </a>
-			<a href="https://twitter.com/HaozhiQ/status/1811798745467748616" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- ICRA 25 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/hop.mp4" width="100%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Hand-Object Interaction Pretraining from Videos </b></font><br>
-			<font size="3">
-				<a href="https://hgaurav2k.github.io/" target="_blank"> Himanshu Gaurav Singh</a>*,
-				<a href="https://antonilo.github.io/" target="_blank"> Antonio Loquercio</a>*,
-				<a href="https://sferrazza.cc/" target="_blank"> Carlo Sferrazza</a>,
-				<a href="https://janehwu.github.io/" target="_blank"> Jane Wu</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank"> Pieter Abbeel</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
-			</font>
-			<br>
-			International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
-			<a href="https://arxiv.org/abs/2409.08273" target="_blank"> [Paper] </a>
-			<a href="https://github.com/hgaurav2k/hop" target="_blank"> [Code] </a>
-			<a href="https://hgaurav2k.github.io/hop/" target="_blank"> [Website] </a>
-			<a href="https://twitter.com/Cinnabar233/status/1836471176237072886" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- CoRL 24 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/penspin.mp4" width="100%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Lessons from Learning to Spin “Pens” </b></font><br>
-			<font size="3">
-				<a href="https://wang59695487.github.io/" target="_blank">Jun Wang</a>*,
-				<a href="https://yingyuan0414.github.io/" target="_blank">Ying Yuan</a>*,
-				<a href="https://www.linkedin.com/in/haichuan-che-7338721b1/" target="_blank">Haichuan Che</a>*,
-				<b> Haozhi Qi</b>*,
-				<a href="https://people.eecs.berkeley.edu/~yima/" target="_blank">Yi Ma</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>,
-				<a href="https://xiaolonw.github.io/" target="_blank">Xiaolong Wang</a>
-			</font>
-			<br>
-			Conference on Robot Learning (<b>CoRL</b>), 2024<br>
-			<a href="https://arxiv.org/abs/2407.18902" target="_blank"> [Paper] </a>
-			<a href="https://github.com/HaozhiQi/penspin/" target="_blank"> [Code] </a>
-			<a href="https://penspin.github.io/" target="_blank"> [Website] </a>
-			<a href="https://twitter.com/HaozhiQ/status/1817949548813152763" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- CoRL 24 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/twist24.mp4" width="98%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Twisting Lids Off with Two Hands  </b></font><br>
-			<font size="3">
-				<a href="https://toruowo.github.io/" target="_blank"> Toru Lin</a>*,
-				<a href="https://zhaohengyin.github.io/" target="_blank"> Zhao-Heng Yin</a>*,
-				<b> Haozhi Qi</b>,
-				<a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank"> Pieter Abbeel</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
-			</font>
-			<br>
-			Conference on Robot Learning (<b>CoRL</b>), 2024<br>
-			<a href="https://arxiv.org/abs/2403.02338" target="_blank"> [Paper] </a>
-			<a href="https://github.com/ToruOwO/twisting-lids" target="_blank"> [Code] </a>
-			<a href="https://toruowo.github.io/bimanual-twist/" target="_blank"> [Website] </a>
-			<a href="https://www.youtube.com/watch?v=TaRva6UjrCo" target="_blank"> [Video] </a>
-			<a href="https://twitter.com/ToruO_O/status/1765046694545412395" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- Arxiv 23 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/neural_feel.mp4" width="98%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Neural feels with Neural Fields: Visuo-tactile Perception for In-Hand Manipulation </b></font><br>
-			<font size="3">
-				<a href="http://www.cs.cmu.edu/~sudhars1/" target="_blank"> Sudharshan Suresh</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://scholar.google.com/citations?user=9bt2Z5QAAAAJ&hl=en" target="_blank">Tingfan Wu</a>,
-			    <a href="https://scholar.google.com/citations?user=3PJeg1wAAAAJ&hl=en">Taosha Fan</a>,
-			    <a href="https://scholar.google.com/citations?user=rebEn8oAAAAJ&hl=en">Luis Pineda</a>,
-			    <a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en">Mike Lambeta</a>,
-			    <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
-			    <a href="https://scholar.google.com/citations?user=DMTuJzAAAAAJ&hl=en">Mrinal Kalakrishnan</a>,
-			    <a href="https://scholar.google.ch/citations?user=fA0rYxMAAAAJ&hl=en">Roberto Calandra</a>,
-			    <a href="https://www.cs.cmu.edu/~kaess/">Michael Kaess</a>,
-			    <a href="https://joeaortiz.github.io/">Joseph Ortiz</a>,
-			    <a href="https://www.mustafamukadam.com/">Mustafa Mukadam</a>
-			</font>
-			<br>
-			<b>Science Robotics</b>, Nov 2024 (<b>Journal Cover</b>)<br>
-			<a href="https://www.science.org/doi/10.1126/scirobotics.adl0628" target="_blank"> [Paper] </a>
-			<a href="https://github.com/facebookresearch/neuralfeels" target="_blank"> [Code] </a>
-			<a href="https://suddhu.github.io/neural-feels/" target="_blank"> [Website] </a>
-			<a href="https://www.youtube.com/watch?v=KOHh0awhSEg" target="_blank"> [Video] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- Digit --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<img class="img-fluid" src="res/figs/digit360.gif" style="border:0px solid black" alt="">
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Digitizing Touch with an Artificial Multimodal Fingertip  </b></font><br>
-			<font size="3">
-				<a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en" target="_blank"> Mike Lambeta</a>,
-				<a href="https://scholar.google.com/citations?user=9bt2Z5QAAAAJ&hl=en" target="_blank">Tingfan Wu</a>,
-				Ali Sengül,
-				Victoria Rose Most,
-				Nolan Black,
-				Kevin Sawyer,
-				Romeo Mercado,
-				<b> Haozhi&nbsp;Qi</b>,
-				Alexander Sohn,
-				Byron Taylor,
-				Norb Tydingco,
-				Gregg Kammerer,
-				Dave Stroud,
-				Jake Khatha,
-				Kurt Jenkins,
-				Kyle Most,
-				Neal Stein,
-				Ricardo Chavira,
-				Thomas Craven-Bartle,
-				Eric Sanchez,
-				Yitian Ding,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>,
-				<a href="https://www.robertocalandra.com/about/" target="_blank"> Roberto Calandra</a>
-			</font>
-			<br>
-			Tech Report, Nov 2024<br>
-			<a href="https://arxiv.org/abs/2411.02479/" target="_blank"> [Paper] </a>
-			<a href="https://github.com/facebookresearch/digit360/" target="_blank"> [Code] </a>
-			<a href="https://digit.ml/" target="_blank"> [Website] </a>
-			
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- CoRL 23 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted src="res/figs/corl23.mp4" width="98%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> General In-Hand Object Rotation with Vision and Touch </b></font><br>
-			<font size="3">
-				<b> Haozhi Qi</b>,
-				<a href="https://scholar.google.com/citations?user=Ecy6lXwAAAAJ&hl=en" target="_blank"> Brent Yi</a>,
-				<a href="http://www.cs.cmu.edu/~sudhars1/" target="_blank"> Sudharshan Suresh</a>,
-				<a href="https://scholar.google.com/citations?user=p6DCMrQAAAAJ&hl=en" target="_blank"> Mike Lambeta</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-				<a href="https://www.robertocalandra.com/about/" target="_blank"> Roberto Calandra</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
-			</font>
-			<br>
-			<!-- 199 / 498 (39.9%) acceptance rate -->
-			Conference on Robot Learning (<b>CoRL</b>), 2023<br>
-			<a href="https://arxiv.org/abs/2309.09979" target="_blank"> [Paper] </a>
-			<a href="https://haozhi.io/rotateit" target="_blank"> [Website] </a>
-			<a href="https://youtu.be/Uh-ltingRzk" target="_blank"> [Video] </a>
-			<a href="https://twitter.com/HaozhiQ/status/1704524466699763771" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- Arxiv --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/NCF.mp4" width="100%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Perceiving Extrinsic Contacts from Touch Improves Learning Insertion Policies</b></font><br>
-			<font size="3">
-				<a href="https://carolinahiguera.github.io/" target="_blank"> Carolina Higuera</a>,
-				<a href="https://joeaortiz.github.io/" target="_blank"> Joseph Ortiz</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://scholar.google.com/citations?user=rebEn8oAAAAJ&hl=en" target="_blank"> Luis Pineda</a>,
-				<a href="https://homes.cs.washington.edu/~bboots/" target="_blank"> Byron Boots</a>,
-				<a href="https://www.mustafamukadam.com/" target="_blank"> Mustafa Mukadam</a>
-			</font>
-			<br>
-			Tech Report, Sep 2023<br>
-			<a href="https://arxiv.org/abs/2309.16652" target="_blank"> [Paper] </a>
-			<a href="https://github.com/carolinahiguera/NCF-Policy" target="_blank"> [Code] </a>
-			<a href="https://www.youtube.com/watch?v=rG_xIfQ6-_k" target="_blank"> [Video] </a>
-			<a href="https://x.com/carohiguerarias/status/1707849840674410642?s=20" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- CoRL 22 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/corl22.mp4" width="98%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> In-Hand Object Rotation via Rapid Motor Adaptation </b></font><br>
-			<font size="3">
-				<b> Haozhi Qi</b>*,
-				<a href="https://ashish-kmr.github.io/" target="_blank"> Ashish Kumar</a>*,
-				<a href="https://www.robertocalandra.com/about/" target="_blank"> Roberto Calandra</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>
-			</font>
-			<br>
-			<!-- 197 / 504 (39.1%) acceptance rate -->
-			Conference on Robot Learning (<b>CoRL</b>), 2022<br>
-			<a href="https://arxiv.org/abs/2210.04887" target="_blank"> [Paper] </a>
-			<a href="https://github.com/haozhiqi/hora" target="_blank"> [Code] </a>
-			<a href="https://haozhi.io/hora" target="_blank"> [Website] </a>
-			<a href="https://www.youtube.com/watch?v=yH0e0l-H7-8" target="_blank"> [Video] </a>
-			<a href="https://twitter.com/HaozhiQ/status/1580217728693960704" target="_blank"> [Summary] </a><br>
-			<b style="color:#EF476F;"> Outstanding Demo Award </b><b> at NeurIPS 2023 Robot Learning Workshop</b>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- CVPR 22 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<video playsinline autoplay loop muted data-src="res/figs/cvpr22.mp4" width="98%" preload="metadata"
-				       style="border-radius:10px;"></video>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Coupling Vision and Proprioception for Navigation of Legged Robots </b></font><br>
-			<font size="3">
-				<a href="https://markfzp.github.io/" target="_blank"> Zipeng Fu</a>*,
-				<a href="https://ashish-kmr.github.io/" target="_blank"> Ashish Kumar</a>*,
-				<a href="https://anag.me/" target="_blank"> Ananye Agarwal</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a>,
-				<a href="https://www.cs.cmu.edu/~dpathak/" target="_blank"> Deepak Pathak</a>
-			</font>
-			<br>
-			<!-- 2067 / 8161 (25.3%) acceptance rate -->
-			Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 <br>
-			<a href="https://arxiv.org/abs/2112.02094" target="_blank"> [Paper] </a>
-			<a href="https://github.com/MarkFzp/navigation-locomotion" target="_blank"> [Code] </a>
-			<a href="https://navigation-locomotion.github.io/" target="_blank"> [Website] </a>
-			<a href="https://www.youtube.com/watch?v=sZVvutQUAQ4" target="_blank"> [Video] </a>
-			<a href="https://twitter.com/pathak2206/status/1540357312703090695" target="_blank"> [Summary] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- JMLR 22 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid" src="res/figs/mcr.png" style="border:0px solid black" alt="">
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> ReduNet: A White-box Deep Network from the Principle of Maximizing Rate
-				Reduction </b></font><br>
-			<font size="3">
-				<a href="https://ryanchankh.github.io/" target="_blank"> Kwan Ho Ryan Chan</a>*,
-				<a href="https://yaodongyu.github.io/" target="_blank"> Yaodong Yu</a>*,
-				<a href="https://sites.google.com/view/cyou" target="_blank"> Chong You</a>*,
-				<b> Haozhi Qi</b>,
-				<a href="http://www.columbia.edu/~jw2966/" target="_blank"> John Wright</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-				Journal of Machine Learning Research (<b>JMLR</b>), accepted in 2022 <br>
-				<a href="https://arxiv.org/abs/2105.10446" target="_blank"> [Paper] </a>
-				<a href="https://github.com/Ma-Lab-Berkeley/ReduNet" target="_blank"> [Code] </a>
-				<a href="https://twitter.com/YiMaTweets/status/1523540536451231744" target="_blank"> [Summary] </a>
-			</font>
-		</div>
-	</div>
-	<div class="content-div"></div>
-
-	<!------------------------- ICLR 21 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3">
-			<div class="row align-items-center">
-				<div class="col-6">
-					<center><font size="2">Ours</font></center>
-				</div>
-				<div class="col-6">
-					<center><font size="2">GT</font></center>
-				</div>
+			<font size="4"> <b> SPIDER: Scalable Physics-Informed Dexterous Retargeting </b></font><br>
+			<div class="authors">
+        <script>document.write(chaoyi_pan);</script>,
+        <script>document.write(changhao_wang);</script>,
+			  <b> Haozhi Qi</b>,
+        <script>document.write(zixi_liu);</script>,
+        <script>document.write(homanga_bharadhwaj);</script>,
+        <script>document.write(akash_sharma);</script>,
+        <script>document.write(tingfan_wu);</script>†,
+        <script>document.write(guanya_shi);</script>†,
+        <script>document.write(jitendra_malik);</script>†,
+        <script>document.write(francois_hogan);</script>†
 			</div>
-			<div class="row align-items-center">
-				<div class="hgap-7perc"></div>
-				<img src="res/figs/rpin1.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
-				<div class="hgap-6perc"></div>
-				<img src="res/figs/rpin2.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
-				<div class="hgap-7perc"></div>
+			Tech Report, Nov 2025
+			<div class="link-badges">
+			  <a href="https://arxiv.org/abs/2511.09484" class="badge" target="_blank"><i class="fas fa-book"></i>Paper</a>
+			  <a href="https://github.com/jc-bao/spider" class="badge" target="_blank"><i class="fa-brands fa-github"></i>Code</a>
+			  <a href="https://jc-bao.github.io/spider-project/" class="badge" target="_blank"><i class="fas fa-globe"></i>Website</a>
+			  <a href="https://x.com/ChaoyiPan/status/1989355247580729561" class="badge" target="_blank"><i class="fas fa-comment-dots"></i>Summary</a>
 			</div>
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Learning Long-term Visual Dynamics with Region Proposal Interaction Networks </b></font><br>
-			<font size="3"> <b> Haozhi Qi</b>,
-				<a href="https://xiaolonw.github.io/" target="_blank"> Xiaolong Wang</a>,
-				<a href="https://www.cs.cmu.edu/~dpathak/" target="_blank"> Deepak Pathak</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a><br>
-				International Conference on Learning Representations (<b>ICLR</b>), 2021 <br>
-				<a href="http://arxiv.org/abs/2008.02265" target="_blank"> [Paper] </a>
-				<a href="https://github.com/HaozhiQi/RPIN" target="_blank"> [Code] </a>
-				<a href="https://haozhi.io/RPIN" target="_blank"> [Website] </a>
-				<a href="https://twitter.com/HaozhiQ/status/1291771371719024647" target="_blank"> [Summary] </a>
-			</font>
-		</div>
 	</div>
 	<div class="content-div"></div>
 
-	<!------------------------- ICML 20 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid " src="res/figs/icml20.png" style="border:0px solid black" alt="">
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Deep Isometric Learning for Visual Recognition </b></font><br>
-			<font size="3"> <b> Haozhi Qi</b>,
-				<a href="https://sites.google.com/view/cyou" target="_blank"> Chong You</a>,
-				<a href="https://xiaolonw.github.io/" target="_blank"> Xiaolong Wang</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a>,
-				<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank"> Jitendra Malik</a><br>
-				International Conference on Machine Learning (<b>ICML</b>), 2020 <br>
-				<a href="https://arxiv.org/abs/2006.16992" target="_blank"> [Paper] </a>
-				<a href="https://github.com/HaozhiQi/ISONet" target="_blank"> [Code] </a>
-				<a href="https://haozhi.io/ISONet" target="_blank"> [Website] </a>
-				<a href="https://youtu.be/EmrVtAx8cNc" target="_blank"> [Video] </a>
-				<a href="https://twitter.com/xiaolonw/status/1278148208317706240"> [Summary] </a>
-			</font>
-		</div>
-	</div>
-	<div class="content-div"></div>
+  <!------------------------- ICRA 25 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/dexhier.mp4" width="100%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> From Simple to Complex Skills: The Case of In-Hand Object Reorientation </b></font><br>
+      <div class="authors">
+        <b>Haozhi Qi</b>,
+        <script>document.write(brent_yi);</script>,
+        <script>document.write(mike_lambeta);</script>,
+        <script>document.write(yi_ma);</script>,
+        <script>document.write(roberto_calandra);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+      International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
+      <div class="link-badges">
+        <a href="http://arxiv.org/abs/2501.05439" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://dexhier.github.io/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- ICRA 25 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/hato.mp4" width="98%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Learning Visuotactile Skills with Two Multifingered Hands </b></font><br>
+      <div class="authors">
+        <script>document.write(toru_lin);</script>,
+        <script>document.write(yu_zhang);</script>*,
+        <script>document.write(qiyang_li);</script>*,
+        <b>Haozhi Qi</b>*,
+        <script>document.write(brent_yi);</script>,
+        <script>document.write(sergey_levine);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+      International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2404.16823" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/ToruOwO/hato" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://toruowo.github.io/hato/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://twitter.com/ToruO_O/status/1783892120631484919" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- ICRA 25 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/iht.mp4" width="100%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing </b></font><br>
+      <div class="authors">
+        <script>document.write(jessica_yin);</script>,
+        <b>Haozhi Qi</b>,
+        <script>document.write(jitendra_malik);</script>,
+        <script>document.write(james_pikul);</script>,
+        <script>document.write(mark_yim);</script>,
+        <script>document.write(tess_hellebrekers);</script>
+      </div>
+      International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2407.07885" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/jessicayin/tactile_skin_model" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://jessicayin.github.io/tactile-skin-rl/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://twitter.com/HaozhiQ/status/1811798745467748616" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- ICRA 25 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/hop.mp4" width="100%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Hand-Object Interaction Pretraining from Videos </b></font><br>
+      <div class="authors">
+        <script>document.write(himanshu_singh);</script>*,
+        <script>document.write(antonio_loquercio);</script>*,
+        <script>document.write(carlo_sferrazza);</script>,
+        <script>document.write(jane_wu);</script>,
+        <b>Haozhi Qi</b>,
+        <script>document.write(pieter_abbeel);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+      International Conference on Robotics and Automation (<b>ICRA</b>), 2025<br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2409.08273" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/hgaurav2k/hop" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://hgaurav2k.github.io/hop/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://twitter.com/Cinnabar233/status/1836471176237072886" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- CoRL 24 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/penspin.mp4" width="100%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> Lessons from Learning to Spin “Pens” </b></font><br>
+
+      <div class="authors">
+        <script>document.write(jun_wang);</script>*,
+        <script>document.write(ying_yuan);</script>*,
+        <script>document.write(haichuan_che);</script>*,
+        <b>Haozhi Qi</b>*,
+        <script>document.write(yi_ma);</script>,
+        <script>document.write(jitendra_malik);</script>,
+        <script>document.write(xiaolong_wang);</script>
+      </div>
+
+      Conference on Robot Learning (<b>CoRL</b>), 2024<br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2407.18902" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/HaozhiQi/penspin/" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://penspin.github.io/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://twitter.com/HaozhiQ/status/1817949548813152763" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- CoRL 24 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/twist24.mp4" width="98%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> Twisting Lids Off with Two Hands </b></font><br>
+
+      <div class="authors">
+        <script>document.write(toru_lin);</script>*,
+        <script>document.write(zhao_heng_yin);</script>*,
+        <b>Haozhi Qi</b>,
+        <script>document.write(pieter_abbeel);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+
+      Conference on Robot Learning (<b>CoRL</b>), 2024<br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2403.02338" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/ToruOwO/twisting-lids" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://toruowo.github.io/bimanual-twist/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://www.youtube.com/watch?v=TaRva6UjrCo" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+        <a href="https://twitter.com/ToruO_O/status/1765046694545412395" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- Science Robotics 24 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/neural_feel.mp4" width="98%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> Neural feels with Neural Fields: Visuo-tactile Perception for In-Hand Manipulation </b></font><br>
+
+      <div class="authors">
+        <script>document.write(sudharshan_suresh);</script>,
+        <b>Haozhi Qi</b>,
+        <script>document.write(tingfan_wu);</script>,
+        <script>document.write(taosha_fan);</script>,
+        <script>document.write(luis_pineda);</script>,
+        <script>document.write(mike_lambeta);</script>,
+        <script>document.write(jitendra_malik);</script>,
+        <script>document.write(mrinal_kalakrishnan);</script>,
+        <script>document.write(roberto_calandra);</script>,
+        <script>document.write(michael_kaess);</script>,
+        <script>document.write(joseph_ortiz);</script>,
+        <script>document.write(mustafa_mukadam);</script>
+      </div>
+
+      <b>Science Robotics</b>, Nov 2024 (<b>Journal Cover</b>)<br>
+
+      <div class="link-badges">
+        <a href="https://www.science.org/doi/10.1126/scirobotics.adl0628" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/facebookresearch/neuralfeels" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://suddhu.github.io/neural-feels/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://www.youtube.com/watch?v=KOHh0awhSEg" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- Digit --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <img class="img-fluid" src="res/figs/digit360.gif" style="border:0px solid black" alt="">
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> Digitizing Touch with an Artificial Multimodal Fingertip </b></font><br>
+
+      <div class="authors">
+        <script>document.write(mike_lambeta);</script>,
+        <script>document.write(tingfan_wu);</script>,
+        Ali Sengül,
+        Victoria Rose Most,
+        Nolan Black,
+        Kevin Sawyer,
+        Romeo Mercado,
+        <b>Haozhi Qi</b>,
+        Alexander Sohn,
+        Byron Taylor,
+        Norb Tydingco,
+        Gregg Kammerer,
+        Dave Stroud,
+        Jake Khatha,
+        Kurt Jenkins,
+        Kyle Most,
+        Neal Stein,
+        Ricardo Chavira,
+        Thomas Craven-Bartle,
+        Eric Sanchez,
+        Yitian Ding,
+        <script>document.write(jitendra_malik);</script>,
+        <script>document.write(roberto_calandra);</script>
+      </div>
+
+      Tech Report, Nov 2024<br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2411.02479/" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/facebookresearch/digit360/" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://digit.ml/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- CoRL 23 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted src="res/figs/corl23.mp4" width="98%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> General In-Hand Object Rotation with Vision and Touch </b></font><br>
+
+      <div class="authors">
+        <b>Haozhi Qi</b>,
+        <script>document.write(brent_yi);</script>,
+        <script>document.write(sudharshan_suresh);</script>,
+        <script>document.write(mike_lambeta);</script>,
+        <script>document.write(yi_ma);</script>,
+        <script>document.write(roberto_calandra);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+
+      Conference on Robot Learning (<b>CoRL</b>), 2023<br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2309.09979" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://haozhi.io/rotateit" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://youtu.be/Uh-ltingRzk" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+        <a href="https://twitter.com/HaozhiQ/status/1704524466699763771" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- Arxiv --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/NCF.mp4" width="100%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> Perceiving Extrinsic Contacts from Touch Improves Learning Insertion Policies </b></font><br>
+
+      <div class="authors">
+        <script>document.write(carolina_higuera);</script>,
+        <script>document.write(joseph_ortiz);</script>,
+        <b>Haozhi Qi</b>,
+        <script>document.write(luis_pineda);</script>,
+        <script>document.write(byron_boots);</script>,
+        <script>document.write(mustafa_mukadam);</script>
+      </div>
+
+      Tech Report, Sep 2023<br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2309.16652" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/carolinahiguera/NCF-Policy" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://www.youtube.com/watch?v=rG_xIfQ6-_k" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+        <a href="https://x.com/carohiguerarias/status/1707849840674410642?s=20" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- CoRL 22 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/corl22.mp4" width="98%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> In-Hand Object Rotation via Rapid Motor Adaptation </b></font><br>
+
+      <div class="authors">
+        <b>Haozhi Qi</b>*,
+        <script>document.write(ashish_kumar);</script>*,
+        <script>document.write(roberto_calandra);</script>,
+        <script>document.write(yi_ma);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+
+      Conference on Robot Learning (<b>CoRL</b>), 2022<br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2210.04887" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/haozhiqi/hora" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://haozhi.io/hora" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://www.youtube.com/watch?v=yH0e0l-H7-8" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+        <a href="https://twitter.com/HaozhiQ/status/1580217728693960704" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+
+      <b style="color:#EF476F;"> Outstanding Demo Award </b>
+      <b> at NeurIPS 2023 Robot Learning Workshop</b>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- CVPR 22 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3 align-column-center">
+      <center>
+        <video playsinline autoplay loop muted data-src="res/figs/cvpr22.mp4" width="98%" preload="metadata"
+               style="border-radius:10px;"></video>
+      </center>
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Coupling Vision and Proprioception for Navigation of Legged Robots </b></font><br>
+      <div class="authors">
+        <script>document.write(zipeng_fu);</script>*,
+        <script>document.write(ashish_kumar);</script>*,
+        <script>document.write(ananye_agarwal);</script>,
+        <b>Haozhi Qi</b>,
+        <script>document.write(jitendra_malik);</script>,
+        <script>document.write(deepak_pathak);</script>
+      </div>
+      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022<br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2112.02094" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/MarkFzp/navigation-locomotion" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://navigation-locomotion.github.io/" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://www.youtube.com/watch?v=sZVvutQUAQ4" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+        <a href="https://twitter.com/pathak2206/status/1540357312703090695" class="badge" target="_blank">
+          <i class="fas fa-comment-dots"></i> Summary
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- JMLR 22 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/mcr.png" style="border:0px solid black" alt="">
+    </div>
+
+    <div class="col-md-9">
+      <font size="4"><b> ReduNet: A White-box Deep Network from the Principle of Maximizing Rate Reduction </b></font><br>
+
+      <div class="authors">
+        <script>document.write(ryan_chan);</script>*,
+        <script>document.write(yaodong_yu);</script>*,
+        <script>document.write(chong_you);</script>*,
+        <b>Haozhi Qi</b>,
+        <script>document.write(john_wright);</script>,
+        <script>document.write(yi_ma);</script>
+      </div>
+
+      Journal of Machine Learning Research (<b>JMLR</b>), accepted in 2022 <br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2105.10446" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/Ma-Lab-Berkeley/ReduNet" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://twitter.com/YiMaTweets/status/1523540536451231744" class="badge" target="_blank"><i class="fas fa-comment-dots"></i> Summary</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- ICLR 21 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <div class="row align-items-center">
+        <div class="col-6"><center><font size="2">Ours</font></center></div>
+        <div class="col-6"><center><font size="2">GT</font></center></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="hgap-7perc"></div>
+        <img src="res/figs/rpin1.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
+        <div class="hgap-6perc"></div>
+        <img src="res/figs/rpin2.gif" style="max-width:40%;border-radius:5px;border:1px solid #021a40;">
+        <div class="hgap-7perc"></div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Learning Long-term Visual Dynamics with Region Proposal Interaction Networks </b></font><br>
+      <div class="authors">
+        <b>Haozhi Qi</b>,
+        <script>document.write(xiaolong_wang);</script>,
+        <script>document.write(deepak_pathak);</script>,
+        <script>document.write(yi_ma);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+      International Conference on Learning Representations (<b>ICLR</b>), 2021 <br>
+      <div class="link-badges">
+        <a href="http://arxiv.org/abs/2008.02265" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/HaozhiQi/RPIN" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://haozhi.io/RPIN" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://twitter.com/HaozhiQ/status/1291771371719024647" class="badge" target="_blank"><i class="fas fa-comment-dots"></i> Summary</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
+  <!------------------------- ICML 20 --------------------------------->
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/icml20.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Deep Isometric Learning for Visual Recognition </b></font><br>
+      <div class="authors">
+        <b>Haozhi Qi</b>,
+        <script>document.write(chong_you);</script>,
+        <script>document.write(xiaolong_wang);</script>,
+        <script>document.write(yi_ma);</script>,
+        <script>document.write(jitendra_malik);</script>
+      </div>
+      International Conference on Machine Learning (<b>ICML</b>), 2020 <br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/2006.16992" class="badge" target="_blank"><i class="fas fa-book"></i> Paper</a>
+        <a href="https://github.com/HaozhiQi/ISONet" class="badge" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://haozhi.io/ISONet" class="badge" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://youtu.be/EmrVtAx8cNc" class="badge" target="_blank"><i class="fas fa-video"></i> Video</a>
+        <a href="https://twitter.com/xiaolonw/status/1278148208317706240" class="badge" target="_blank"><i class="fas fa-comment-dots"></i> Summary</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
 	<!------------------------- NIPS 19 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid" src="res/figs/nips19.png" style="border:0px solid black" alt="">
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> NeurVPS: Neural Vanishing Point Scanning via Conic Convolution </b></font><br>
-			<font size="3">
-				<a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://cs.stanford.edu/people/jingweih/" target="_blank"> Jingwei Huang</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-				Neural Information Processing System (<b>NIPS</b>), 2019 <br>
-				<a href="https://arxiv.org/abs/1910.06316" target="_blank"> [Paper] </a>
-				<a href="https://github.com/zhou13/neurvps" target="_blank"> [Code] </a><br>
-			</font>
-		</div>
-	</div>
-	<div class="content-div"></div>
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/nips19.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> NeurVPS: Neural Vanishing Point Scanning via Conic Convolution </b></font><br>
+      <div class="authors">
+        <script>document.write(yichao_zhou);</script>,
+        <b> Haozhi Qi</b>,
+        <script>document.write(jingwei_huang);</script>,
+        <script>document.write(yi_ma);</script>
+      </div>
+      Neural Information Processing System (<b>NIPS</b>), 2019 <br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/1910.06316" class="badge" target="_blank">
+          <i class="fas fa-book"></i> Paper
+        </a>
+        <a href="https://github.com/zhou13/neurvps" class="badge" target="_blank">
+          <i class="fa-brands fa-github"></i> Code
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
 	<!------------------------- ICCV 19 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid" src="res/figs/iccv19a.png" style="border:0px solid black" alt="">
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Learning to Reconstruct 3D Manhattan Wireframes from a Single Image </b></font><br>
-			<font size="3">
-				<a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
-				<b> Haozhi Qi</b>,
-				<a href="https://yx-s-z.github.io/" target="_blank"> Yuexiang Zhai</a>,
-				<a href="https://qisun.me/" target="_blank"> Qi Sun</a>,
-				<a href="http://www.zhilichen.com/" target="_blank"> Zhili Chen</a>,
-				<a href="https://www.liyiwei.org/" target="_blank"> Li-Yi Wei</a>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-				International Conference on Computer Vision (<b>ICCV</b>), 2019 (<b>Oral, 4.3% acceptance rate</b>) <br>
-				<a href="https://arxiv.org/abs/1905.07482" target="_blank"> [Paper] </a> <a
-						href="https://github.com/zhou13/shapeunity" target="_blank"> [Code] </a><br>
-			</font>
-		</div>
-	</div>
-	<div class="content-div"></div>
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/iccv19a.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> Learning to Reconstruct 3D Manhattan Wireframes from a Single Image </b></font><br>
+
+      <div class="authors">
+        <script>document.write(yichao_zhou);</script>,
+        <b> Haozhi Qi</b>,
+        <script>document.write(yuexiang_zhai);</script>,
+        <script>document.write(qi_sun);</script>,
+        <script>document.write(zhili_chen);</script>,
+        <script>document.write(liyi_wei);</script>,
+        <script>document.write(yi_ma);</script>
+      </div>
+
+      International Conference on Computer Vision (<b>ICCV</b>), 2019
+      (<b>Oral, 4.3% acceptance rate</b>) <br>
+
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/1905.07482" class="badge" target="_blank">
+          <i class="fas fa-book"></i> Paper
+        </a>
+        <a href="https://github.com/zhou13/shapeunity" class="badge" target="_blank">
+          <i class="fa-brands fa-github"></i> Code
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
+
 	<!------------------------- ICCV 19 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3">
-			<img class="img-fluid" src="res/figs/iccv19b.png" style="border:0px solid black" alt="">
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> End-to-End Wireframe Parsing </b></font> <br>
-			<font size="3">
-				<a href="https://yichaozhou.com" target="_blank"> Yichao Zhou</a>,
-				<b> Haozhi Qi</b>,
-				<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank"> Yi Ma</a><br>
-				International Conference on Computer Vision (<b>ICCV</b>), 2019 <br>
-				<a href="https://arxiv.org/abs/1905.03246" target="_blank"> [Paper] </a> <a
-						href="https://github.com/zhou13/lcnn" target="_blank"> [Code] </a><br>
-			</font>
-		</div>
-	</div>
-	<div class="content-div"></div>
+  <div class="row align-items-center">
+    <div class="col-md-3">
+      <img class="img-fluid" src="res/figs/iccv19b.png" style="border:0px solid black" alt="">
+    </div>
+    <div class="col-md-9">
+      <font size="4"><b> End-to-End Wireframe Parsing </b></font><br>
+
+      <div class="authors">
+        <script>document.write(yichao_zhou);</script>,
+        <b> Haozhi Qi</b>,
+        <script>document.write(yi_ma);</script>
+      </div>
+      International Conference on Computer Vision (<b>ICCV</b>), 2019 <br>
+      <div class="link-badges">
+        <a href="https://arxiv.org/abs/1905.03246" class="badge" target="_blank">
+          <i class="fas fa-book"></i> Paper
+        </a>
+        <a href="https://github.com/zhou13/lcnn" class="badge" target="_blank">
+          <i class="fa-brands fa-github"></i> Code
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content-div"></div>
 
 	<!------------------------- ICCV 17 --------------------------------->
 	<div class="row align-items-center">
@@ -718,21 +990,24 @@
 		</div>
 		<div class="col-md-9">
 			<font size="4"> <b>Deformable Convolutional Networks </b></font><br>
-			<font size="3">
-				<a href="https://jifengdai.org/" target="_blank"> Jifeng Dai</a>*,
-				<b>Haozhi Qi</b>*,
-				<a href="http://yuwenxiong.com/" target="_blank"> Yuwen Xiong</a>*,
-				<a href="https://liyi14.github.io/" target="_blank"> Yi Li</a>*,
-				<a href="http://www.cs.toronto.edu/~gdzhang/" target="_blank"> Guodong Zhang</a>*,
-				<a href="https://ancientmooner.github.io/" target="_blank"> Han Hu</a>,
-				<a href="https://yichenwei.github.io/" target="_blank"> Yichen Wei</a><br>
-				International Conference on Computer Vision (<b>ICCV</b>), 2017 (<b>Oral, 2.1% acceptance rate</b>) <br>
-				<a href="https://arxiv.org/abs/1703.06211" target="_blank"> [Paper] </a>
-				<a href="https://github.com/msracver/Deformable-ConvNets" target="_blank"> [Code] </a> <br>
-			</font>
+      <div class="authors">
+        <script>document.write(jifeng_dai);</script>*,
+			  <b> Haozhi Qi</b>*,
+        <script>document.write(yuwen_xiong);</script>*,
+        <script>document.write(yi_li);</script>*,
+        <script>document.write(guodong_zhang);</script>*,
+        <script>document.write(han_hu);</script>,
+        <script>document.write(yichen_wei);</script>
+			</div>
+      International Conference on Computer Vision (<b>ICCV</b>), 2017 (<b>Oral, 2.1% acceptance rate</b>) <br>
+      <div class="link-badges">
+			  <a href="https://arxiv.org/abs/1703.06211" class="badge" target="_blank"><i class="fas fa-book"></i>Paper</a>
+			  <a href="https://github.com/msracver/Deformable-ConvNets" class="badge" target="_blank"><i class="fa-brands fa-github"></i>Code</a>
+			</div>
 		</div>
 	</div>
 	<div class="content-div"></div>
+
 	<!------------------------- CVPR 17 --------------------------------->
 	<div class="row align-items-center">
 		<div class="col-md-3">
@@ -740,20 +1015,21 @@
 		</div>
 		<div class="col-md-9">
 			<font size="4"><b>Fully Convolutional Instance-aware Semantic Segmentation</b></font> <br>
-			<font size="3">
-				<a href="https://liyi14.github.io/" target="_blank"> Yi Li</a>*,
-				<b>Haozhi Qi</b>*,
-				<a href="https://jifengdai.org/" target="_blank"> Jifeng Dai</a>,
-				<a href="https://www.researchgate.net/scientific-contributions/Xiangyang-Ji-11421572" target="_blank">
-					Xiangyang Ji</a>,
-				<a href="https://yichenwei.github.io/" target="_blank"> Yichen Wei</a><br>
-				Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017 (<b>Spotlight, 8.0% acceptance rate</b>)
-				<br>
-				<a href="https://arxiv.org/abs/1611.07709" target="_blank"> [Paper] </a>
-				<a href="https://github.com/msracver/FCIS" target="_blank"> [Code] </a>
-			</font>
+			<div class="authors">
+        <script>document.write(yi_li);</script>*,
+			  <b> Haozhi Qi</b>*,
+        <script>document.write(jifeng_dai);</script>,
+        <script>document.write(xiangyang_ji);</script>,
+        <script>document.write(yichen_wei);</script>
+			</div>
+      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017 (<b>Spotlight, 8.0% acceptance rate</b>)
+			<div class="link-badges">
+			  <a href="https://arxiv.org/abs/1611.07709" class="badge" target="_blank"><i class="fas fa-book"></i>Paper</a>
+			  <a href="https://github.com/msracver/FCIS" class="badge" target="_blank"><i class="fa-brands fa-github"></i>Code</a>
+			</div>
 		</div>
 	</div>
+	<div class="content-div"></div>
 
 </div>
 
