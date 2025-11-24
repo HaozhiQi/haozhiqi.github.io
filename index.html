@@ -58,7 +58,7 @@
       background: #ffffff;
 
       border: 1px solid #d1d5db;
-      border-radius: 4px;     /* pill 形状，视觉上不会显得笨重 */
+      border-radius: 4px;
       line-height: 1.2;
 
       transition: background 0.15s ease, border-color 0.15s ease;
@@ -91,20 +91,19 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script>
     document.addEventListener("DOMContentLoaded", function() {
-        const videos = document.querySelectorAll("video[data-src]");
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const video = entry.target;
-                    video.src = video.getAttribute("data-src");
-                    video.autoplay = true;
-                    video.loop = true;
-                    observer.unobserve(video);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        videos.forEach(video => observer.observe(video));
+      const videos = document.querySelectorAll("video[data-src]");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const video = entry.target;
+                video.src = video.getAttribute("data-src");
+                video.autoplay = true;
+                video.loop = true;
+                observer.unobserve(video);
+            }
+        });
+      }, { threshold: 0.1 });
+      videos.forEach(video => observer.observe(video));
     });
 	</script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -120,7 +119,7 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="res/js/bootstrap.min.js"></script>
 
-	<script>
+  <script>
     const jitendra_malik     = '<a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>';
     const yi_ma              = '<a href="http://people.eecs.berkeley.edu/~yima/" target="_blank">Yi Ma</a>';
 
