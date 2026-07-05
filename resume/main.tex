@@ -1,0 +1,524 @@
+\documentclass{resume}
+
+\usepackage[left=2.2cm,top=2.2cm,right=2.2cm,bottom=2.2cm]{geometry} % Document margins
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{array, makecell}
+\usepackage{lipsum}
+
+\name{Haozhi Qi}
+
+\usepackage{fontenc}
+\usepackage{xcolor}
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+\usepackage[default,black,semibold]{sourceserifpro}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+
+\newcommand*{\makecvfooter}[2]{%
+  \fancyfoot{}
+  \fancyfoot[L]{\scriptsize {#1}}
+  \fancyfoot[R]{\scriptsize {#2}}
+}
+
+\usepackage{tabularx,stackengine}
+\newcolumntype{L}[1]{>{\minwd l{#1}}l<{\endminwd}}
+\newcolumntype{C}[1]{>{\minwd c{#1}}c<{\endminwd}}
+\newcolumntype{R}[1]{>{\minwd r{#1}}r<{\endminwd}}
+\def\minwd#1#2#3\endminwd{\stackengine{0pt}{#3}{\rule{#2}{0pt}}{O}{#1}{F}{F}{L}}
+\newcolumntype{Q}{@{}c@{}}
+
+% parametric vspace
+\newlength{\myvertspace}
+\setlength{\myvertspace}{0.5em}
+\newcommand{\vs}{ \vspace{\myvertspace} }
+
+\linespread{1.10}
+
+\usepackage{enumitem}
+\setlist{leftmargin=5mm}
+
+\definecolor{highcolor}{HTML}{18469B}
+\definecolor{oralcolor}{HTML}{900C3F}
+
+\definecolor{citecolor}{HTML}{0071bc}
+\hypersetup{
+    colorlinks=true,%
+    citecolor=citecolor,%
+    filecolor=citecolor,%
+    linkcolor=citecolor,%
+    urlcolor=citecolor,
+    breaklinks=true,
+}
+
+\begin{document}
+
+{\Huge Haozhi Qi}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{Phone} & {+1 510-926-5161} \\
+{Email} & {\href{mailto:haozhi@uchicago.edu}{haozhi@uchicago.edu}} \\
+{Homepage} & {\href{https://haozhi.io/}{https://haozhi.io/}} \\
+{GScholar} & {\href{https://scholar.google.com/citations?user=iyVHKkcAAAAJ&hl=en}{Link}}
+\end{tabular}}
+
+\vs
+{\bf \large Current Appointments}
+\vs
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2025 - Present} & {\bf Amazon FAR }, Senior Applied Scientist \\
+& {Dexterous Manipulation} \\
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2026 - Present} & {\bf University of Chicago} \\
+& {Assistant Professor in Computer Science}
+\end{tabular}}
+
+\vs
+{\bf \large Education}
+\vs
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2018 - 2025} & {\bf University of California, Berkeley} \\
+& {Ph.D. in Electrical Engineering and Computer Science} \\
+& {Advisors: Prof. Yi Ma and Prof. Jitendra Malik} \\
+& {Thesis: Multisensory Dexterity for Robotics}
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2013 - 2018} & {\bf Hong Kong University of Science and Technology} \\
+& {Bachelor of Science in Mathematics} \\
+& {Bachelor of Science in Computer Science}
+\end{tabular}}
+
+\vs
+{\bf \large Past Experience}
+\vs
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2025} & {\bf Meta FAIR}, Research Scientist \\
+& {Dexterous Manipulation at Embodied AI Group} \\
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2022 - 2025} & {\bf Meta FAIR}, Visiting Researcher \\
+% & {with Prof. Roberto Calandra and Mr. Mike Lambeta} \\
+& {Dexterous Manipulation at Embodied AI Group} \\
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2017 - 2018} & {\bf Microsoft Research Asia}, Research Intern \\
+% & {with Dr. Jifeng Dai and Dr. Yichen Wei} \\
+& {Object Detection at Visual Computing Group}
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2016} & {\bf Microsoft Research Asia}, Research Intern \\
+% & {with Dr. Jifeng Dai} \\
+& {Object Detection at Visual Computing Group}
+\end{tabular}}
+
+\vs
+{\bf \large Honors and Awards}
+\vs
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}p{13.1cm}@{}}
+{2025} & {\href{https://www2.eecs.berkeley.edu/Students/Awards/146/}{Lotfi A. Zadeh Prize}} \\
+[-0.02cm]
+& {For outstanding PhD research in soft computing and its applications} \\
+{2024} & {EECS Evergreen Award for Undergraduate Researcher Mentoring} \\
+{2021 - 2023} & {Meta AI Research Academic Grant} \\
+{2023} & {Outstanding Demo Award at NeurIPS Robot Learning Workshop} \\
+{2022} & {Best Paper Award at CVPR Multimodal Learning Workshop} \\
+{2013 - 2017} & {HKUST Undergrad Scholarship} \\ 
+% {\color{gray}{\$10,000 HKD each academic year}} \\
+{2016} & {Winner of Segmentation Track, MS COCO Challenge}
+\end{tabular}}
+
+\vs
+{\bf \large Publications \footnotesize (* indicates equal contribution)}
+\vs
+
+\newcounter{mycounter}
+\stepcounter{mycounter}
+
+{\bf Peer-reviewed Publications}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2025} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} {\bf Haozhi Qi}, Brent Yi, Mike Lambeta, Yi Ma, Roberto Calandra, Jitendra Malik. \href{https://arxiv.org/abs/2501.05439}{From Simple to Complex Skills: The Case of In-Hand Object Reorientation}.
+  \end{minipage} 
+  \\
+  & & {International Conference on Robotics and Automation (\textbf{ICRA}), 2025}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} 
+  Himanshu Gaurav Singh*, Antonio Loquercio*, Carmelo Sferrazza, Jane Wu, {\bf Haozhi Qi}, Pieter Abbeel, Jitendra Malik. \href{https://arxiv.org/abs/2409.08273}{Hand-Object Interaction Pretraining from Videos}.
+  \end{minipage} \\
+  & & {International Conference on Robotics and Automation (\textbf{ICRA}), 2025}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Toru Lin, Yu Zhang*, Qiyang Li*, {\bf Haozhi Qi}*, Brent Yi, Sergey Levine, Jitendra Malik. \href{https://arxiv.org/abs/2404.16823}{Learning Visuotactile Skills with Two Multifingered Hands}.
+  \end{minipage} \\
+  & & {International Conference on Robotics and Automation (\textbf{ICRA}), 2025}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Jessica Yin, {\bf Haozhi Qi}, Jitendra Malik, James Pikul, Mark Yim, Tess Hellebrekers. \href{https://arxiv.org/abs/2407.07885}{Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing}.
+  \end{minipage} \\
+  & & {International Conference on Robotics and Automation (\textbf{ICRA}), 2025}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2024} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Sudharshan Suresh, {\bf Haozhi Qi}, Tingfan Wu, Taosha Fan, Luis Pineda, Mike Lambeta, Jitendra Malik, Mrinal Kalakrishnan, Roberto Calandra, Michael Kaess, Joe Ortiz, Mustafa Mukadam. \href{https://www.science.org/doi/10.1126/scirobotics.adl0628}{Neural Feels with Neural Fields: Visuo-Tactile Perception for In-Hand Manipulation}.
+  \end{minipage} \\
+  & & {Science Robotics, November 2024}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Jun Wang*, Ying Yuan*, Haichuan Che*, {\bf Haozhi Qi}*, Yi Ma, Jitendra Malik, Xiaolong Wang. \href{https://arxiv.org/abs/2407.18902}{Lessons from Learning to Spin ``Pens''}.
+  \end{minipage} \\
+  & & {Conference on Robot Learning (\textbf{CoRL}), 2024}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Toru Lin*, Zhao-Heng Yin*, {\bf Haozhi Qi}, Pieter Abbeel, Jitendra Malik. \href{https://arxiv.org/abs/2403.02338}{Twisting Lids Off with Two Hands}.
+  \end{minipage} \\
+  & & {Conference on Robot Learning (\textbf{CoRL}), 2024}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2023} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} {\bf Haozhi Qi}, Brent Yi, Sudharshan Suresh, Mike Lambeta, Yi Ma, Roberto Calandra, Jitendra Malik. \href{https://arxiv.org/abs/2309.09979}{General In-Hand Object Rotation with Vision and Touch}.
+  \end{minipage} \\
+  & & {Conference on Robot Learning (\textbf{CoRL}), 2023}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2022} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} {\bf Haozhi Qi}*, Ashish Kumar*, Roberto Calandra, Yi Ma, Jitendra Malik. \href{https://arxiv.org/abs/2210.04887}{In-Hand Object Rotation via Rapid Motor Adaptation}.
+  \end{minipage} \\
+  & & {Conference on Robot Learning (\textbf{CoRL}), 2022}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Zipeng Fu*, Ashish Kumar*, Ananye Agarwal, {\bf Haozhi Qi}, Jitendra Malik, Deepak Pathak. \href{https://arxiv.org/abs/2112.02094}{Coupling Vision and Proprioception for Navigation of Legged Robots}.
+  \end{minipage} \\
+  & & {Computer Vision and Pattern Recognition (\textbf{CVPR}), 2022}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Kwan Ho Ryan Chan*, Yaodong Yu*, Chong You*, {\bf Haozhi Qi}, John Wright, Yi Ma. \href{https://arxiv.org/abs/2105.10446}{ReduNet: A White-box Deep Network from the Principle of Maximizing Rate Reduction}.
+  \end{minipage} \\
+  & & {Journal of Machine Learning Research (\textbf{JMLR}), accepted in 2022}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2021} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} {\bf Haozhi Qi}, Xiaolong Wang, Deepak Pathak, Yi Ma, Jitendra Malik. \href{https://arxiv.org/abs/2008.02265}{Learning Long-term Visual Dynamics with Region Proposal Interaction Networks}.
+  \end{minipage} \\
+  & & {International Conference on Learning Representations (\textbf{ICLR}), 2021}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2020} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} {\bf Haozhi Qi}, Chong You, Xiaolong Wang, Yi Ma, Jitendra Malik. \href{https://arxiv.org/abs/2006.16992}{Deep Isometric Learning for Visual Recognition}.
+  \end{minipage} \\
+  & & {International Conference on Machine Learning (\textbf{ICML}), 2020}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2019} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Yichao Zhou, {\bf Haozhi Qi}, Jingwei Huang, Yi Ma. \href{https://arxiv.org/abs/1910.06316}{NeurVPS: Neural Vanishing Point Scanning via Conic Convolution}.
+  \end{minipage} \\
+  & & {Neural Information Processing System (\textbf{NIPS}), 2019}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Yichao Zhou, {\bf Haozhi Qi}, Yuexiang Zhai, Qi Sun, Zhili Chen, Li-Yi Wei, Yi Ma. \href{https://arxiv.org/abs/1905.07482}{Learning to Reconstruct 3D Manhattan Wireframes from a Single Image}.
+  \end{minipage} \\
+  & & {International Conference on Computer Vision (\textbf{ICCV}), 2019} \\
+  & & (\textit{\textcolor{oralcolor}{Oral, 4.3\% acceptance rate}})
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Yichao Zhou, {\bf Haozhi Qi}, Yi Ma. \href{https://arxiv.org/abs/1905.03246}{End-to-End Wireframe Parsing}.
+  \end{minipage} \\
+  & & {International Conference on Computer Vision (\textbf{ICCV}), 2019}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2017} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Jifeng Dai*, {\bf Haozhi Qi}*, Yuwen Xiong*, Yi Li*, Guodong Zhang*, Han Hu, Yichen Wei. \href{https://arxiv.org/abs/1703.06211}{Deformable Convolutional Networks}.
+  \end{minipage} \\
+  & & {International Conference on Computer Vision (\textbf{ICCV}), 2017} \\
+  & & (\textit{\textcolor{oralcolor}{Oral, 2.1\% acceptance rate}})  \\
+  & & \textbf{\textcolor{highcolor}{\href{https://www.paperdigest.org/2024/05/most-influential-iccv-papers-2024-05/}{ICCV 2017's Most Influential Paper \#5}}}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Yi Li*, {\bf Haozhi Qi}*, Jifeng Dai, Xiangyang Ji, Yichen Wei. \href{https://arxiv.org/abs/1611.07709}{Fully Convolutional Instance-aware Semantic Segmentation}.
+  \end{minipage} \\
+  & & {Computer Vision and Pattern Recognition (\textbf{CVPR}), 2017} \\
+  & & (\textit{\textcolor{oralcolor}{Spotlight, 8.0\% acceptance rate}})
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\bf Pre-prints}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2024} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Mike Lambeta, Tingfan Wu, Ali Sengül, Victoria Rose Most, Nolan Black, Kevin Sawyer, Romeo Mercado, {\bf Haozhi Qi}, Chaithanya Krishna Bodduluri, Alexander Sohn, Byron Taylor, Norb Tydingco, Gregg Kammerer, Dave Stroud, Jake Khatha, Kurt Jenkins, Kyle Most, Neal Stein, Ricardo Chavira, Thomas Craven-Bartle, Eric Sanchez, Yitian Ding, Jitendra Malik, Roberto Calandra. \href{https://arxiv.org/abs/2411.02479}{Digitizing Touch with an Artificial Multimodal Fingertip}.
+  \end{minipage} \\
+  & & {Tech Report, November 2024}
+\end{tabular}}
+\stepcounter{mycounter}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+  {2023} & P.\themycounter & 
+  \begin{minipage}[t]{0.78\textwidth} Carolina Higuera, Joseph Ortiz, {\bf Haozhi Qi}, Luis Pineda, Byron Boots, Mustafa Mukadam. 
+  \href{https://arxiv.org/abs/2309.16652}{Perceiving Extrinsic Contacts from Touch Improves Learning Insertion Policies}.
+  \end{minipage} \\
+  & & {Tech Report, September 2023}
+\end{tabular}}
+\stepcounter{mycounter}
+
+\vs
+{\bf \large Press Coverage}
+\vs
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2024} & {Digitizing Touch with an Artificial Multimodal Fingertip} \\
+& {\href{https://techcrunch.com/2024/10/31/meta-is-making-a-robot-hand-that-can-feel-touch/}{TechCrunch}}, \href{https://venturebeat.com/ai/meta-unveils-ai-tools-to-give-robots-a-human-touch-in-physical-world/}{VentureBeat},  \href{https://www.therobotreport.com/gelsight-meta-ai-release-digit-360-tactile-sensor-for-robotic-fingers/}{The Robot Report} \\
+{} & {Twisting Lids Off with Two Hands} \\
+& {\href{https://theaigrid.com/twisting-lids-off-with-robot-hands-a-leap-in-robotic-dexterity/}{The AI Grid}} \\
+{2023} & {General In-hand Object Rotation with Vision and Touch} \\
+& {\href{https://www.newscientist.com/article/2394911-robotic-hand-has-the-dexterity-to-handle-tricky-objects-with-care/}{New Scientist (UK)}}, \href{https://tu-dresden.de/ing/informatik/die-fakultaet/news/publikation-ueber-das-erlernen-des-drehens-von-objekten-in-der-hand-durch-sehen-und-tasten-veroeffentlicht}{TU Dresden News} \\
+{2022} & {In-Hand Object Rotation via Rapid Motor Adaptation} \\
+& {\href{https://www.marktechpost.com/2022/10/17/latest-robotics-research-releases-hora-a-single-policy-capable-of-rotating-diverse-objects-with-a-dexterous-robot-hand/}{MarkTechPost}}
+\end{tabular}}
+
+
+\vs
+{\bf \large Talks}
+\vs
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+{2025} & & {The Atomic Skill Approach to Robotic Dexterity} \\  [-0.02cm]
+& & {\small ELLIIT Symposium and Focus Period on Robot Learning} \\ [-0.02cm]
+& & {\small UT Austin RPL Seminar} \\ [-0.02cm]
+& & {\small UC Berkeley EMBER Seminar Series} \\
+\end{tabular}}
+
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+{2025} & & {Multisensory Dexterity for Robotics} \\  [-0.02cm]
+& & {\small University of Chicago (Department of Computer Science)} \\ [-0.02cm]
+& & {\small UC San Diego (Department of Computer Science and Engineering)} \\ [-0.02cm]
+& & {\small New York University (Electrical and Computer Engineering \& Mechanical Engineering)} \\ [-0.02cm]
+& & {\small Rutgers University (Department of Computer Science)} \\ [-0.02cm]
+& & {\small Georgia Institute of Technology (School of Interactive Computing)} \\ [-0.02cm]
+& & {\small Princeton University (Department of Computer Science)} \\ [-0.02cm]
+& & {\small University of Michigan (Computer Science and Engineering Department \& Robotics Department)} \\ [-0.02cm]
+& & {\small The University of Hong Kong (School of Computing and Data Science)} \\
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+{2024} & & {Manipulation and Perception with Multisensory Robot Hands} \\  [-0.02cm]
+& & {\small Columbia University (hosted by Prof. Matei Ciocarlie)} \\ [-0.02cm]
+& & {\small Princeton University (hosted by Prof. Jia Deng)} \\ [-0.02cm]
+& & {\small New York University (hosted by Prof. Lerrel Pinto)} \\ [-0.02cm]
+& & {\small Carnegie Mellon University (hosted by Prof. Katerina Fragkiadaki)} \\ [-0.02cm]
+& & {\small University of Pennsylvania (hosted by Prof. Mark Yim)} \\ [-0.02cm]
+& & {\small University of Illinois Urbana-Champaign (hosted by Prof. Justin Yim)} \\ [-0.02cm]
+& & {\small Stanford University (Stanford Vision and Learning Lab)} \\
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{0.95cm}L{0.65cm}l@{}}
+{2023} & & {General In-hand Object Rotation with Vision and Touch} \\  [-0.02cm]
+& & {\small Columbia University (hosted by Prof. Matei Ciocarlie)} \\ [-0.02cm]
+& & {\small UC San Diego (hosted by Prof. Xiaolong Wang)} \\ [-0.02cm]
+& & {\small Bay Area Computer Vision Day}
+\end{tabular}}
+
+\vs
+{\bf \large Teaching}
+\vs
+
+{\bf Guest Lectures}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2025} & {Sim2Real: The Winding but Necessary Road to Dexterity} \\
+& {\small [UChicago] [CMSC 20600] ``Introduction to Robotics'' by Prof. Sarah Sebo} \\
+& {\small [UPenn] [ESE 6510] ``Physical Intelligence: Science and Systems'' by Prof. Antonio Loquercio}
+\end{tabular}}
+
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2024} & {Reinforcement Learning and Sim-to-Real} \\
+& {\small [UC Berkeley] [CS294-277] ``Robots That Learn'' by Prof. Jitendra Malik} 
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{} & {Manipulation with Multi-fingered Hands} \\  [-0.05cm]
+& {\small [UIUC] [CS598YL] ``Deep Learning for Robotic Manipulation'' by Prof. Yunzhu Li} \\ [-0.05cm]
+& {\small [UC Berkeley] [EECS106B] ``Robotic Manipulation and Interaction'' by Prof. Shankar Sastry}
+\end{tabular}} 
+
+{\bf Teaching Assistant}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2021 Spring} & {Robotic Manipulation and Interaction} \\
+& {Teaching Assistant with Prof. Yi Ma and Prof. Shankar Sastry}
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2020 Spring} & {Designing, Visualizing and Understanding Deep Neural Networks} \\
+& {Teaching Assistant with Prof. John Canny}
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2019 Fall} & {High‑dim Data Analysis with Low‑dim Models} \\
+& {Teaching Assistant with Prof. Yi Ma}
+\end{tabular}}
+
+\vs
+{\bf \large Service}
+\vs
+
+{\bf Workshop Organizer}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2025} & {[CoRL]} \href{https://dex-manipulation.github.io/corl2025/}{Dexterous Manipulation: Learning and Control with Diverse Modalities} \\
+& {[RSS]} \href{https://dex-manipulation.github.io/rss2025/}{Dexterous Manipulation: Learning and Control with Diverse Data} \\
+& {[ICRA] \href{https://sites.google.com/view/dexterity-workshop-icra2025/home}{Handy Moves: Dexterity in Multi-Fingered Hands}}
+\end{tabular}}
+
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2024} & {[NeurIPS] \href{https://www.touchprocessing.org/2024/}{Touch Processing: From Data to Knowledge}}\\
+& {[CoRL]} \href{https://dex-manipulation.github.io/corl2024/}{Learning Robot Fine and Dexterous Manipulation: Perception and Control} \\
+& {[RSS]} \href{https://dex-manipulation.github.io/rss2024/}{Dexterous Manipulation: Design, Perception and Control}
+\end{tabular}}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2023} & {[NeurIPS] \href{https://www.touchprocessing.org/2023/}{Touch Processing: a New Sensing Modality for AI}}
+\end{tabular}}
+
+{\bf Area Chair}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{Robotics} & {RSS 26} % \\
+% {Vision} & {CVPR 19-26, ICCV 19/21/23/25, ECCV 20/22/24, T-PAMI 20-22, IJCV 20-21} \\
+% {Learning} & {ICLR 22-23/25-26, ICML 21-25, NeurIPS 20-25, TMLR 22-25, AAAI 20-23}
+\end{tabular}}
+
+{\bf Reviewer}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{Robotics} & {ICRA 21/24-26, CoRL 24-25, RSS 24-25, IROS 24-25, RA-L 23-25, T-RO 24-25, IJRR 24} \\
+& {Humanoids 24, Science Robotics 24-25} \\
+{Vision} & {CVPR 19-26, ICCV 19/21/23/25, ECCV 20/22/24, T-PAMI 20-22, IJCV 20-21} \\
+{Learning} & {ICLR 22-23/25-26, ICML 21-25, NeurIPS 20-25, TMLR 22-25, AAAI 20-23}
+\end{tabular}}
+
+{\bf Community Service}
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}L{2.1cm}l@{}}
+{2026} & \textbf{PhD Admissions Committee}, UChicago \\
+{2024} & \textbf{Faculty Hiring Student Committee}, UC Berkeley \\
+{2021 - 2023} & {\textbf{Mentor}, Undergrad from Underrepresented Backgrounds} \\
+% & \color{gray}{\small Chloe Yeo, Natasha Arya, Danny Lam, Lakshya Nagal} \\
+{2020} & {\textbf{Graduate Admissions Committee}, UC Berkeley}
+
+\end{tabular}}
+
+\end{document}
