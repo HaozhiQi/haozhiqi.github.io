@@ -98,6 +98,29 @@
       color: #666666 !important;
       text-decoration: none;
     }
+
+    #news-list:not(.show-all) li:nth-child(n+11) {
+      display: none;
+    }
+
+    #news-list {
+      margin-bottom: 2px;
+    }
+
+    #older-news-toggle {
+      display: inline-block;
+      padding: 0;
+      margin: 0 0 6px 40px;
+      border: 0;
+      color: #0071bc;
+      background: none;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    #older-news-toggle:hover {
+      color: #208799;
+    }
   </style>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -281,16 +304,38 @@
   <h3> Recent News </h3>
   <ul id="news-list">
     <li>[26/09] Invited talk at IROS 2026 Workshop on <a href="https://superodometry.com/interoception/">Beyond Exteroception: Interoceptive Perception for Resilient Robotics</a>.</li>
+    <li>[26/08] Serving as Associate Editor for ICRA 2027.</li>
     <li>[26/07] Invited talk at RSS 2026 Workshop on <a href="https://rss-workshop-2026.github.io/">Data-Centric Robotics: What Data Do Robots Really Need?</a>.</li>
+    <li>[26/07] Serving as Associate Editor for Humanoids 2026.</li>
     <li>[26/06] Invited talk at ICRA 2026 Workshop on <a href="https://manipulation-robustness.github.io/icra2026/">Manipulation Robustness: Towards Human-Level Robustness in the Real World</a>.</li>
     <li>[26/06] <a href="https://jc-bao.github.io/spider-project/">SPIDER</a> accepted at IROS 2026.</li>
+    <li>[26/05] Serving as Area Chair for CoRL 2026.</li>
     <li>[26/04] Selected as an <a href="https://sites.google.com/view/rsspioneers2026/participants">RSS Pioneer</a>, joining an annual cohort of about 30 early-career robotics researchers.</li>
     <li>[26/04] <a href="https://www.jessicayin.com/osmo_tactile_glove/">OSMO</a> accepted at RA-L 2026.</li>
     <li>[26/03] Serving as Area Chair for NeurIPS 2026.</li>
     <li>[26/01] <a href="https://dexscrew.github.io/">DexScrew</a> and <a href="https://aina-robot.github.io/">AINA</a> accepted at ICRA 2026.</li>
     <li>[25/11] Serving as Area Chair for RSS 2026.</li>
   </ul>
+  <button type="button" id="older-news-toggle" aria-controls="news-list" aria-expanded="false">Show older news...</button>
 </div>
+
+<script>
+  (function() {
+    const newsList = document.getElementById('news-list');
+    const toggleButton = document.getElementById('older-news-toggle');
+
+    if (newsList.children.length <= 10) {
+      toggleButton.style.display = 'none';
+      return;
+    }
+
+    toggleButton.addEventListener('click', function() {
+      const isExpanded = newsList.classList.toggle('show-all');
+      toggleButton.textContent = isExpanded ? 'Hide older news...' : 'Show older news...';
+      toggleButton.setAttribute('aria-expanded', isExpanded);
+    });
+  })();
+</script>
 
 <div class="container">
   <h5>Workshop on Dexterous Manipulation</h5>
@@ -309,6 +354,7 @@
     </li>
     <li>
       <strong>CoRL:</strong>
+      <a href="https://dex-manipulation.github.io/corl2026/" target="_blank">[2026]</a> (incoming) &middot;
       <a href="https://dex-manipulation.github.io/corl2025/" target="_blank">[2025]</a> <a href="https://www.youtube.com/watch?v=JpZMXwd_980" target="_blank" title="Video"><i class="fas fa-video" style="font-size:0.85em; color:#888;"></i></a> &middot;
       <a href="https://dex-manipulation.github.io/corl2024/" target="_blank">[2024]</a> <a href="https://www.youtube.com/watch?v=rtHeKZJEzSg" target="_blank" title="Video"><i class="fas fa-video" style="font-size:0.85em; color:#888;"></i></a>
     </li>
@@ -1274,6 +1320,7 @@
         </li>
         <li>
           <strong>CoRL:</strong>
+          <a href="https://dex-manipulation.github.io/corl2026/" target="_blank">[2026]</a> (incoming) &middot;
           <a href="https://dex-manipulation.github.io/corl2025/" target="_blank">[2025]</a> <a href="https://www.youtube.com/watch?v=JpZMXwd_980" target="_blank" title="Video"><i class="fas fa-video" style="font-size:0.85em; color:#888;"></i></a> &middot;
           <a href="https://dex-manipulation.github.io/corl2024/" target="_blank">[2024]</a> <a href="https://www.youtube.com/watch?v=rtHeKZJEzSg" target="_blank" title="Video"><i class="fas fa-video" style="font-size:0.85em; color:#888;"></i></a>
         </li>
@@ -1308,6 +1355,7 @@
         <a href="https://yingyuan0414.github.io/">★</a>
         <a href="https://jsiburian.github.io/">★</a>
         <a href="https://runpeidong.web.illinois.edu/">★</a>
+        <a href="https://sunghwan.me/">★</a>
       </span>
     </div>
   </div>
